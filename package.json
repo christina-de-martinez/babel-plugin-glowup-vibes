@@ -1,0 +1,17 @@
+{
+    "name": "glowup",
+    "version": "1.0.0",
+    "description": "babel plugin to transpile gen z slang into valid javascript",
+    "main": "transposer.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "babel ./src/script.js --out-file compiled.js"
+    },
+    "author": "Christina Martinez",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/cli": "^7.23.0",
+        "@babel/core": "^7.23.0",
+        "@babel/preset-env": "^7.22.20"
+    }
+}
