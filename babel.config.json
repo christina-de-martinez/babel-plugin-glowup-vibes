@@ -14,5 +14,5 @@
             }
         ]
     ],
-    "plugins": ["./transposer.js"]
+    "plugins": ["./index.js"]
 }

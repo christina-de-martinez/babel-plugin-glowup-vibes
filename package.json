@@ -2,7 +2,7 @@
     "name": "glowup",
     "version": "1.0.0",
     "description": "babel plugin to transpile gen z slang into valid javascript",
-    "main": "transposer.js",
+    "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "babel ./src/script.js --out-file /lib/compiled.js"
