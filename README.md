@@ -67,6 +67,8 @@ yeet("message") | throw new Error("message")
 
 I welcome PRs if you can think of ways to make this even more bussin.
 
+Note: this was designed using Babel 7 and I haven't tested it on anything else. I super don't guarantee that this is totally flawless - it's one of those toy projects that I'll probably publish and forget about.
+
 ## License
 
 You're free to use this according to the MIT license.
