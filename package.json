@@ -1,5 +1,5 @@
 {
-    "name": "glowup",
+    "name": "babel-plugin-glowup-vibes",
     "version": "1.0.0",
     "description": "babel plugin to transpile gen z slang into valid javascript",
     "main": "index.js",
@@ -9,6 +9,18 @@
     },
     "author": "Christina Martinez",
     "license": "MIT",
+    "keywords": [
+        "babel-plugin",
+        "christina.codes",
+        "gen z",
+        "slang",
+        "goated",
+        "lit",
+        "sick",
+        "vibes",
+        "major w",
+        "yeet"
+    ],
     "devDependencies": {
         "@babel/cli": "^7.23.0",
         "@babel/core": "^7.23.0",

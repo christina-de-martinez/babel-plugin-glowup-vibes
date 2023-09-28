@@ -8,11 +8,46 @@ I was shook. I thought it hit different so I said "bet" and started flexin on em
 
 ## What does it do?
 
-Transpiles gen z slang into valid JavaScript.
+It transpiles gen z slang into valid JavaScript.
 
 This was a fun project to increase my AST rizz. I'm a Babel simp now 👉👈
 
-### Options
+### How to use it
+
+`npm install babel-plugin-glowup-vibes --save`
+Set up babel and add `babel-plugin-glowup-vibes` to your list of plugins.
+
+In case you need more detailed instructions than that:
+Create a `babel.config.json` file and add the following to it:
+```
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "edge": "17",
+                    "firefox": "60",
+                    "chrome": "67",
+                    "safari": "11.1"
+                },
+                "useBuiltIns": "usage",
+                "corejs": "3.6.5"
+            }
+        ]
+    ],
+    "plugins": ["babel-plugin-glowup-vibes"]
+}
+```
+
+Add something like this to your `package.json` file:
+```
+"scripts": {
+    "build": "babel ./src/script.js --out-file ./lib/compiled.js"
+},
+```
+
+## Options
 
 Your Code | JS
 --- | ---
