@@ -12,13 +12,15 @@ It transpiles gen z slang into valid JavaScript.
 
 This was a fun project to increase my AST rizz. I'm a Babel simp now 👉👈
 
-### How to use it
+## How to use it
 
-`npm install babel-plugin-glowup-vibes --save`
-Set up babel and add `babel-plugin-glowup-vibes` to your list of plugins.
+* Install `npm install babel-plugin-glowup-vibes --save`
+* Set up babel and add `babel-plugin-glowup-vibes` to your list of plugins
+* Highkey start flexing. Use the options outlined in [Options](#options). Running your build command should be a major W. Look for big JavaScript vibes wherever you set the output to go (in our example below, it'll be in `lib/compiled.js`)
 
 In case you need more detailed instructions than that:
-Create a `babel.config.json` file and add the following to it:
+
+To set up babel, create a `babel.config.json` file and add the following to it:
 ```
 {
     "presets": [
