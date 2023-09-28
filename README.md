@@ -1,4 +1,4 @@
-# ✨ Glowup ✨
+# ✨ Glowup Vibes ✨
 
 ## The most goated Babel plugin
 
