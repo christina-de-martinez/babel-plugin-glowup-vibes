@@ -6,6 +6,8 @@ This plugin was high key inspired by an Instagram reel by @justin.makes.things: 
 
 I was shook. I thought it hit different so I said "bet" and started flexin on em. IYKYK fam.
 
+Here's my stitch: https://www.instagram.com/reel/Cxvwz76vBus/
+
 ## What does it do?
 
 It transpiles gen z slang into valid JavaScript.
@@ -61,7 +63,7 @@ lowkey.stan("message") | console.log("message")
 lowkey.sus("message") | console.warn("message")
 lowkey.cringe("message") | console.error("message")
 throw new L("message") | throw new Error("message")
-yeet("message") | throw new Error("message")
+yeet(new L("message")) | throw new Error("message")
 
 ## Contributing
 
