@@ -1,6 +1,4 @@
-module.exports = function (babel) {
-    const { types: t } = babel;
-
+module.exports = function () {
     return {
         visitor: {
             Identifier(path) {
@@ -29,17 +27,6 @@ module.exports = function (babel) {
                     path.node.name = "Error";
                 }
             },
-            // todo
-            NewExpression(path) {
-                console.log("visiting", path);
-            },
-            // todo
-            FunctionDeclaration(path) {
-                console.log("...", path.node.id.name);
-                if (path.node.id.name === "doSomething") {
-                    path.node.id.name = "___doSomething";
-                }
-            },
             // yeet("message") -> throw new Error("message")
             ExpressionStatement(path) {
                 const { node } = path;
@@ -52,14 +39,7 @@ module.exports = function (babel) {
 
                     const throwStatement = {
                         type: "ThrowStatement",
-                        argument: {
-                            type: "NewExpression",
-                            callee: {
-                                type: "Identifier",
-                                name: "Error",
-                            },
-                            arguments: [errorArgument],
-                        },
+                        argument: errorArgument,
                     };
 
                     path.replaceWith(throwStatement);

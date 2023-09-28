@@ -6,10 +6,10 @@ function vibeCheck() {
 
     if (!theVibe) {
         if (!rizz) {
-            throw new L("this is not it");
+            yeet(new L("this is not it"));
         } else {
             lowkey.cringe("yikes fam");
-            yeet("major L");
+            yeet(new Error("major L"));
         }
     } else {
         lowkey.stan("slay");
