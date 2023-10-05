@@ -10,7 +10,7 @@ Here's my stitch: https://www.instagram.com/reel/Cxvwz76vBus/
 
 ## What does it do?
 
-It transpiles gen z slang into valid JavaScript.
+It transpiles internet slang into valid JavaScript.
 
 This was a fun project to increase my AST rizz. I'm a Babel simp now 👉👈
 
