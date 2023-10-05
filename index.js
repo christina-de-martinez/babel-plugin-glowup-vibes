@@ -8,7 +8,14 @@ module.exports = function () {
         "stan": "log",
         "sus": "warn",
         "cringe": "error",
-        "L": "Error"
+        "L": "Error",
+        "lit": "async",
+        "chill": "await",
+        "bet": "promise",
+        "totes": "all",
+        "yass" : "resolve", 
+        "nah": "reject",
+        "sayLess" : "JSON.stringify"
     };
 
     const handleIdentifier = (path) => {
@@ -30,6 +37,8 @@ module.exports = function () {
             path.replaceWith(throwStatement);
         }
     };
+
+
 
     return {
         visitor: {
