@@ -1,16 +1,16 @@
 module.exports = function () {
     const identifierMappings = {
-        "onGod": "true",
-        "noCap": "true",
-        "cap": "false",
-        "ghosted": "return null",
-        "lowkey": "console",
-        "stan": "log",
-        "sus": "warn",
-        "cringe": "error",
-        "L": "Error",
-        "grab": "require",
-        "ship": "exports",
+        onGod: "true",
+        noCap: "true",
+        cap: "false",
+        ghosted: "return null",
+        lowkey: "console",
+        stan: "log",
+        sus: "warn",
+        cringe: "error",
+        L: "Error",
+        grab: "require",
+        ship: "exports",
     };
 
     const handleIdentifier = (path) => {
@@ -22,8 +22,11 @@ module.exports = function () {
 
     const handleExpressionStatement = (path) => {
         const { node } = path;
-        
-        if (node.expression.type === "CallExpression" && node.expression.callee.name === "yeet") {
+
+        if (
+            node.expression.type === "CallExpression" &&
+            node.expression.callee.name === "yeet"
+        ) {
             const errorArgument = node.expression.arguments[0];
             const throwStatement = {
                 type: "ThrowStatement",
@@ -36,7 +39,7 @@ module.exports = function () {
     return {
         visitor: {
             Identifier: handleIdentifier,
-            ExpressionStatement: handleExpressionStatement
-        }
+            ExpressionStatement: handleExpressionStatement,
+        },
     };
 };
