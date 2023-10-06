@@ -8,7 +8,7 @@ function vibeCheck() {
 
     if (!theVibe) {
         if (!rizz) {
-            yeet(new L("mid af"));
+            yeet(new L("this is not it"));
         } else {
             lowkey.cringe("yikes fam");
             yeet(new Error("major L"));

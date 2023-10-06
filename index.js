@@ -11,6 +11,7 @@ module.exports = function () {
         L: "Error",
         grab: "require",
         ship: "exports",
+        fr: "assert",
     };
 
     const handleIdentifier = (path) => {
