@@ -1,6 +1,6 @@
 function vibeCheck() {
     const theVibe = cap;
-    const rizz = onGod;
+    const rizz = finna("u simpin'?") ? cap : onGod;
 
     lowkey.sus("the vibes might be off 💀");
 
