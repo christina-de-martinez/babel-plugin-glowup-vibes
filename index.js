@@ -11,7 +11,7 @@ module.exports = function () {
         "L": "Error",
         "lit": "async",
         "chill": "await",
-        "bet": "promise",
+        "bet": "Promise",
         "totes": "all",
         "yass" : "resolve", 
         "nah": "reject",
@@ -38,12 +38,10 @@ module.exports = function () {
         }
     };
 
-
-
     return {
         visitor: {
             Identifier: handleIdentifier,
-            ExpressionStatement: handleExpressionStatement
+            ExpressionStatement: handleExpressionStatement,
         }
     };
 };
