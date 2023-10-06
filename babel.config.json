@@ -14,5 +14,7 @@
             }
         ]
     ],
-    "plugins": ["./index.js"]
+    "plugins": [
+        "./index.js"
+    ]
 }
