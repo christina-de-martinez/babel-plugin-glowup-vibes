@@ -9,7 +9,7 @@ module.exports = function () {
         "sus": "warn",
         "cringe": "error",
         "L": "Error",
-        "itsGiving": "return",
+        "spit": "return",
         "period": "break",
         "brb": "await"
     };
