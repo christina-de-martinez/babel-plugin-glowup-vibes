@@ -68,6 +68,8 @@ Add something like this to your `package.json` file:
 | yeet(new L("message"))   | throw new Error("message")     |
 | new bet((yass, nah))     | new Promise((resolve, reject)) |
 | sayLess({JSON})          | JSON.stringify({JSON})         |
+| bet.totes([PromiseArray])| Promise.all([PromiseArray])    |
+
 
 
 ### Promises 
