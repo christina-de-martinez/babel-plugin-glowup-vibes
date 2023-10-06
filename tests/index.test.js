@@ -126,3 +126,12 @@ test(`Should replace based with toLowerCase`, () => {
   }).code;
   expect(output).toEqual(expected);
 });
+
+test(`Should replace yeet with throw`, () => {
+  const input = `yeet(new L("YIKES FAM"));`;
+  const expected = `"use strict";\n\nthrow new Error("YIKES FAM");`;
+  const output = babel.transform(input, {
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
