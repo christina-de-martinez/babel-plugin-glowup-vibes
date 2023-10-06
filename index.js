@@ -5,6 +5,7 @@ module.exports = function () {
         "cap": "false",
         "ghosted": "return null",
         "lowkey": "console",
+        "tea": "info",
         "stan": "log",
         "sus": "warn",
         "cringe": "error",
