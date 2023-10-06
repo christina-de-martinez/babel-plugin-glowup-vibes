@@ -20,4 +20,5 @@ module.exports = {
   period: "break",
   skrt: "break",
   based: "toLowerCase",
+  finna: "confirm",
 };
