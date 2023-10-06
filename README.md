@@ -16,13 +16,14 @@ This was a fun project to increase my AST rizz. I'm a Babel simp now 👉👈
 
 ## How to use it
 
-* Install `npm install babel-plugin-glowup-vibes --save`
-* Set up babel and add `babel-plugin-glowup-vibes` to your list of plugins
-* Highkey start flexing. Use the options outlined in [Options](#options). Running your build command should be a major W. Look for big JavaScript vibes wherever you set the output to go (in our example below, it'll be in `lib/compiled.js`)
+- Install `npm install babel-plugin-glowup-vibes --save`
+- Set up babel and add `babel-plugin-glowup-vibes` to your list of plugins
+- Highkey start flexing. Use the options outlined in [Options](#options). Running your build command should be a major W. Look for big JavaScript vibes wherever you set the output to go (in our example below, it'll be in `lib/compiled.js`)
 
 In case you need more detailed instructions than that:
 
 To set up babel, create a `babel.config.json` file and add the following to it:
+
 ```
 {
     "presets": [
@@ -45,6 +46,7 @@ To set up babel, create a `babel.config.json` file and add the following to it:
 ```
 
 Add something like this to your `package.json` file:
+
 ```
 "scripts": {
     "build": "babel ./src/script.js --out-file ./lib/compiled.js"
@@ -53,17 +55,25 @@ Add something like this to your `package.json` file:
 
 ## Options
 
-Your Code | JS
---- | ---
-noCap | true
-cap | false
-onGod | true
-ghosted | return null
-lowkey.stan("message") | console.log("message")
-lowkey.sus("message") | console.warn("message")
-lowkey.cringe("message") | console.error("message")
-throw new L("message") | throw new Error("message")
-yeet(new L("message")) | throw new Error("message")
+| Your Code                | JS                             |
+| ------------------------ | ------------------------------ |
+| noCap                    | true                           |
+| cap                      | false                          |
+| onGod                    | true                           |
+| ghosted                  | return null                    |
+| lowkey.stan("message")   | console.log("message")         |
+| lowkey.sus("message")    | console.warn("message")        |
+| lowkey.cringe("message") | console.error("message")       |
+| throw new L("message")   | throw new Error("message")     |
+| yeet(new L("message"))   | throw new Error("message")     |
+| new bet((yass, nah))     | new Promise((resolve, reject)) |
+| sayLess({JSON})          | JSON.stringify({JSON})         |
+| bet.totes([PromiseArray])| Promise.all([PromiseArray])    |
+
+
+
+### Promises 
+![Promises](image link)
 
 ## Contributing
 
