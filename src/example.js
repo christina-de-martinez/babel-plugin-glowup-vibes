@@ -13,6 +13,8 @@ function vibeCheck() {
         }
     } else {
         lowkey.stan("slay");
-        ghosted;
+        sayLess("vibin");
     }
+
+    ghosted;
 }
