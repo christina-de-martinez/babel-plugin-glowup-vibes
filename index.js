@@ -72,6 +72,7 @@ module.exports = function (babel) {
         visitor: {
             Identifier: handleIdentifier,
             ExpressionStatement: handleExpressionStatement,
+            MemberExpression: handleMemberExpression
         },
     };
 };
