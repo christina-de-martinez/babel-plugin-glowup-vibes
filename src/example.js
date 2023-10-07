@@ -4,9 +4,11 @@ function vibeCheck() {
 
     lowkey.sus("the vibes might be off 💀");
 
+    fr(rizz === true);
+
     if (!theVibe) {
         if (!rizz) {
-            yeet(new L("this is not it"));
+            yeet(new L("mid af"));
         } else {
             lowkey.cringe("yikes fam");
             yeet(new Error("major L"));
@@ -16,3 +18,5 @@ function vibeCheck() {
         ghosted;
     }
 }
+
+module.ship = vibeCheck;
