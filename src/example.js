@@ -22,6 +22,14 @@ function vibeCheck() {
         lowkey.stan("slay");
         ghosted;
     }
+
+    const truth = "she hella bad fr"
+
+    lowkey.stan(truth.highkey())
+
+    const weInTheLibrary = "DAMN SHE HELLA BAD"
+
+    lowkey.stan(weInTheLibrary.lowkey())
 }
 
 module.ship = vibeCheck;

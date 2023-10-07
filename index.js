@@ -1,4 +1,6 @@
-module.exports = function () {
+module.exports = function (babel) {
+    const { types } = babel;
+
     const identifierMappings = {
         onGod: "true",
         noCap: "true",
@@ -38,11 +40,38 @@ module.exports = function () {
             path.replaceWith(throwStatement);
         }
     };
+    
+    /**
+     * handle MemberExpression nodes to replace custom property accesses
+     * @param {babel.NodePath} path - the current node path
+     */
+    const handleMemberExpression = (path) => {
+
+        /**
+         * place all custom mappings for members here
+         * @example any object/array property such as array.prototype.push, etc
+         */
+        const memberExpressionMappings = {
+            highkey: "toUpperCase",
+            lowkey: "toLowerCase"
+        }
+
+        const newName = memberExpressionMappings[path.node.property.name];
+
+        if (
+            types.isMemberExpression(path.node) &&
+            types.isIdentifier(path.node.property) &&
+            newName
+        ) {
+            path.node.property.name = newName;
+        }
+    };
 
     return {
         visitor: {
             Identifier: handleIdentifier,
             ExpressionStatement: handleExpressionStatement,
+            MemberExpression: handleMemberExpression,
         },
     };
 };

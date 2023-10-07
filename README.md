@@ -78,6 +78,8 @@ grab("stash") | require("stash")
 module.ship = vibe | module.exports = vibe
 fr(assertion) | assert(assertion)
 itsGiving(thingToReturn) | return thingToReturn;
+String.prototype.highkey() | String.prototype.toUpperCase()
+String.prototype.lowkey() | String.prototype.toLowerCase()
 
 ## Contributing
 
