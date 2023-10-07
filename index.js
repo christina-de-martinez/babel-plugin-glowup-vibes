@@ -8,7 +8,8 @@ module.exports = function () {
         "stan": "log",
         "sus": "warn",
         "cringe": "error",
-        "L": "Error"
+        "L": "Error",
+        "sayLess": "return "
     };
 
     const handleIdentifier = (path) => {
@@ -28,6 +29,15 @@ module.exports = function () {
                 argument: errorArgument,
             };
             path.replaceWith(throwStatement);
+        }
+        
+        if (node.expression.type === "CallExpression" && node.expression.callee.name === "sayLess") {
+            const returnArgument = node.expression.arguments[0];
+            const returnStatement = {
+                type: "ReturnStatement",
+                argument: returnArgument,
+            };
+            path.replaceWith(returnStatement);
         }
     };
 
