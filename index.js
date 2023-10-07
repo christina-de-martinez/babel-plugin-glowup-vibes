@@ -50,6 +50,7 @@ module.exports = function (babel) {
         /**
          * place all custom mappings for members here
          * @example any object/array property such as array.prototype.push, etc
+         * string.lowkey() will not replace console.log() lowkey
          */
         const memberExpressionMappings = {
             highkey: "toUpperCase",
@@ -71,7 +72,6 @@ module.exports = function (babel) {
         visitor: {
             Identifier: handleIdentifier,
             ExpressionStatement: handleExpressionStatement,
-            MemberExpression: handleMemberExpression,
         },
     };
 };
