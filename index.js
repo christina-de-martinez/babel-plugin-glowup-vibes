@@ -10,6 +10,8 @@ module.exports = function () {
         cringe: "error",
         L: "Error",
         fr: "assert",
+        grab: "require",
+        ship: "exports",
     };
 
     const handleIdentifier = (path) => {
