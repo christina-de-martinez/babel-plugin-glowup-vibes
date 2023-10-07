@@ -11,8 +11,8 @@ module.exports = {
     "fr": "assert",
     "grab": "require",
     "ship": "exports",
+    "itsGiving": "return",
     "outOfPocket": "Infinity",
     "PERIODT": "break",
     "based": "toLowerCase",
-    "itsGiving": "return",
 };
