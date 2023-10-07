@@ -4,6 +4,8 @@ function vibeCheck() {
 
     lowkey.sus("the vibes might be off 💀");
 
+    fr(rizz === true);
+
     if (!theVibe) {
         if (!rizz) {
             yeet(new L("mid af"));
