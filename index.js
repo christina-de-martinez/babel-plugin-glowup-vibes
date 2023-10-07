@@ -8,10 +8,12 @@ module.exports = function () {
         stan: "log",
         sus: "warn",
         cringe: "error",
+        tea: "info",
         L: "Error",
         fr: "assert",
         grab: "require",
         ship: "exports",
+        itsGiving: "return",
     };
 
     const handleIdentifier = (path) => {
