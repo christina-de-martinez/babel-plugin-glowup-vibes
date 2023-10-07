@@ -73,6 +73,7 @@ yeet(new L("message")) | throw new Error("message")
 PERIODT | break
 grab("stash") | require("stash")
 module.ship = vibe |module.exports = vibe
+fr(assertion) | assert(assertion)
 
 ## Contributing
 
