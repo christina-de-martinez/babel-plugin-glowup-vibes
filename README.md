@@ -64,16 +64,17 @@ ghosted | return null
 lowkey.stan("message") | console.log("message")
 lowkey.sus("message") | console.warn("message")
 lowkey.cringe("message") | console.error("message")
+lowkey.tea("message") | console.info("message")
 throw new L("message") | throw new Error("message")
 yeet(new L("message")) | throw new Error("message")
 PERIODT | break
 grab("stash") | require("stash")
-module.ship = vibe |module.exports = vibe
+module.ship = vibe | module.exports = vibe
 fr(assertion) | assert(assertion)
 outOfPocket   | Infinity
 PERIODT |  break
 "HIGHKEY".based()": "HIGHKEY".toLowerCase()
-
+itsGiving(thingToReturn) | return thingToReturn;
 
 ## Contributing
 
@@ -82,7 +83,15 @@ I welcome PRs if you can think of ways to make this even more bussin.
 
 If you want to contribute, but you don't know where to start, that's great! Watch this YouTube video to learn more about Babel plugins: <https://www.youtube.com/watch?v=aK6n0pYcOe8>
 
+AST explorer is also a great tool to learn about ASTs and test some of your ideas. <https://astexplorer.net/>
+
 When you submit a PR, don't forget to update the table in the README along with the appropriate code in example.js.
+
+## Does this exist in (insert coding language)?
+
+There is a C++ version! <https://twitter.com/lauriewired/status/1684329735399313409>
+
+Other than that, the answer is probably no. But you should make one!!
 
 ## License
 
