@@ -51,6 +51,8 @@ Add something like this to your `package.json` file:
 },
 ```
 
+Note: this was designed using Babel 7 and I haven't tested it on anything else. I super don't guarantee that this is totally flawless.
+
 ## Options
 
 Your Code | JS
@@ -64,12 +66,23 @@ lowkey.sus("message") | console.warn("message")
 lowkey.cringe("message") | console.error("message")
 throw new L("message") | throw new Error("message")
 yeet(new L("message")) | throw new Error("message")
+PERIODT | break
+grab("stash") | require("stash")
+module.ship = vibe |module.exports = vibe
+fr(assertion) | assert(assertion)
+outOfPocket   | Infinity
+PERIODT |  break
+"HIGHKEY".based()": "HIGHKEY".toLowerCase()
+
 
 ## Contributing
 
 I welcome PRs if you can think of ways to make this even more bussin.
 
-Note: this was designed using Babel 7 and I haven't tested it on anything else. I super don't guarantee that this is totally flawless - it's one of those toy projects that I'll probably publish and forget about.
+
+If you want to contribute, but you don't know where to start, that's great! Watch this YouTube video to learn more about Babel plugins: <https://www.youtube.com/watch?v=aK6n0pYcOe8>
+
+When you submit a PR, don't forget to update the table in the README along with the appropriate code in example.js.
 
 ## License
 

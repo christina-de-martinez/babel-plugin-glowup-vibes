@@ -10,8 +10,11 @@ module.exports = function () {
 
     const handleExpressionStatement = (path) => {
         const { node } = path;
-        
-        if (node.expression.type === "CallExpression" && node.expression.callee.name === "yeet") {
+
+        if (
+            node.expression.type === "CallExpression" &&
+            node.expression.callee.name === "yeet"
+        ) {
             const errorArgument = node.expression.arguments[0];
             const throwStatement = {
                 type: "ThrowStatement",
@@ -24,7 +27,7 @@ module.exports = function () {
     return {
         visitor: {
             Identifier: handleIdentifier,
-            ExpressionStatement: handleExpressionStatement
-        }
+            ExpressionStatement: handleExpressionStatement,
+        },
     };
 };
