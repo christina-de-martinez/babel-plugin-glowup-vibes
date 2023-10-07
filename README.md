@@ -69,6 +69,8 @@ lowkey.cringe("message") | console.error("message")
 throw new L("message") | throw new Error("message")
 yeet(new L("message")) | throw new Error("message")
 PERIODT | break
+chill | async
+letItCook | await
 
 ## Contributing
 

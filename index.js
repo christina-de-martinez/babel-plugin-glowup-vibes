@@ -8,7 +8,9 @@ module.exports = function () {
         "stan": "log",
         "sus": "warn",
         "cringe": "error",
-        "L": "Error"
+        "L": "Error",
+        "chill": "async",
+        "letItCook":"await"
     };
 
     const handleIdentifier = (path) => {
