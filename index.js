@@ -8,7 +8,9 @@ module.exports = function () {
         "stan": "log",
         "sus": "warn",
         "cringe": "error",
-        "L": "Error"
+        "L": "Error",
+        "highkey": "alert",
+        "bet": "confirm"
     };
 
     const handleIdentifier = (path) => {
