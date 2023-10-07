@@ -2,11 +2,11 @@
 
 ## The most goated Babel plugin
 
-This plugin was high key inspired by an Instagram reel by @justin.makes.things: https://www.instagram.com/reel/Cwn5KYtIWDm/
+This plugin was high key inspired by an Instagram reel by @justin.makes.things: <https://www.instagram.com/reel/Cwn5KYtIWDm/>
 
 I was shook. I thought it hit different so I said "bet" and started flexin on em. IYKYK fam.
 
-Here's my stitch on Instagram: https://www.instagram.com/reel/Cxvwz76vBus/
+Here's my stitch on Instagram: <https://www.instagram.com/reel/Cxvwz76vBus/>
 
 Or, watch my YouTube short #likeAndSubscribe
 
@@ -27,7 +27,8 @@ This was a fun project to increase my AST rizz. I'm a Babel simp now 👉👈
 In case you need more detailed instructions than that:
 
 To set up babel, create a `babel.config.json` file and add the following to it:
-```
+
+```json
 {
     "presets": [
         [
@@ -49,7 +50,8 @@ To set up babel, create a `babel.config.json` file and add the following to it:
 ```
 
 Add something like this to your `package.json` file:
-```
+
+```json
 "scripts": {
     "build": "babel ./src/script.js --out-file ./lib/compiled.js"
 },
@@ -69,6 +71,8 @@ lowkey.cringe("message") | console.error("message")
 throw new L("message") | throw new Error("message")
 yeet(new L("message")) | throw new Error("message")
 PERIODT | break
+grab("stash") | require("stash")
+module.ship = vibe |module.exports = vibe
 
 ## Contributing
 
