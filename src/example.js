@@ -16,3 +16,5 @@ function vibeCheck() {
         ghosted;
     }
 }
+
+module.ship = vibeCheck;
