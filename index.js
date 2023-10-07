@@ -8,7 +8,10 @@ module.exports = function () {
         "stan": "log",
         "sus": "warn",
         "cringe": "error",
-        "L": "Error"
+        "L": "Error",
+        "fuck around": "try",
+        "find out": "catch",
+        "either way": "finally"
     };
 
     const handleIdentifier = (path) => {
