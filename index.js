@@ -8,28 +8,27 @@ module.exports = function () {
         "stan": "log",
         "sus": "warn",
         "cringe": "error",
-        "L": "Error"
+        "L": "Error",
+        "typah": "typeof",
+        "fr": "if",
+        "orfr": "else if",
+        "nah": "else"
     };
 
-    const handleIdentifier = (path) => {
-        const newName = identifierMappings[path.node.name];
-        if (newName) {
-            path.node.name = newName;
+    function handleIdentifier(path) {
+        if (path.node.name in identifierMappings) {
+            path.node.name = identifierMappings[path.node.name];
         }
-    };
+    }
 
-    const handleExpressionStatement = (path) => {
-        const { node } = path;
-        
-        if (node.expression.type === "CallExpression" && node.expression.callee.name === "yeet") {
-            const errorArgument = node.expression.arguments[0];
-            const throwStatement = {
+    function handleExpressionStatement(path) {
+        if (path.node.expression.type === "CallExpression" && path.node.expression.callee.name === "yeet") {
+            path.replaceWith({
                 type: "ThrowStatement",
-                argument: errorArgument,
-            };
-            path.replaceWith(throwStatement);
+                argument: path.node.expression.arguments[0],
+            });
         }
-    };
+    }
 
     return {
         visitor: {

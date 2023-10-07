@@ -53,17 +53,19 @@ Add something like this to your `package.json` file:
 
 ## Options
 
-Your Code | JS
---- | ---
-noCap | true
-cap | false
-onGod | true
-ghosted | return null
-lowkey.stan("message") | console.log("message")
-lowkey.sus("message") | console.warn("message")
-lowkey.cringe("message") | console.error("message")
-throw new L("message") | throw new Error("message")
-yeet(new L("message")) | throw new Error("message")
+| Your Code                            | JS                                     |
+|--------------------------------------|----------------------------------------|
+| noCap                                | true                                   |
+| cap                                  | false                                  |
+| onGod                                | true                                   |
+| ghosted                              | return null                            |
+| lowkey.stan("message")               | console.log("message")                 |
+| lowkey.sus("message")                | console.warn("message")                |
+| lowkey.cringe("message")             | console.error("message")               |
+| throw new L("message")               | throw new Error("message")             |
+| yeet(new L("message"))               | throw new Error("message")             |
+| typah ""                             | typeof ""                              |
+| fr (noCap) {} orfr (noCap) {} nah {} | if (true) {} else if (true) {} else {} |
 
 ## Contributing
 
