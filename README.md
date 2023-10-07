@@ -6,7 +6,11 @@ This plugin was high key inspired by an Instagram reel by @justin.makes.things: 
 
 I was shook. I thought it hit different so I said "bet" and started flexin on em. IYKYK fam.
 
-Here's my stitch: https://www.instagram.com/reel/Cxvwz76vBus/
+Here's my stitch on Instagram: https://www.instagram.com/reel/Cxvwz76vBus/
+
+Or, watch my YouTube short #likeAndSubscribe
+
+[![Video](https://img.youtube.com/vi/vgcbwv_3WDU/hqdefault.jpg)](https://www.youtube.com/watch?v=vgcbwv_3WDU)
 
 ## What does it do?
 
@@ -64,10 +68,13 @@ lowkey.sus("message") | console.warn("message")
 lowkey.cringe("message") | console.error("message")
 throw new L("message") | throw new Error("message")
 yeet(new L("message")) | throw new Error("message")
+PERIODT | break
 
 ## Contributing
 
 I welcome PRs if you can think of ways to make this even more bussin.
+
+When you submit a PR, don't forget to update the table in the README along with the appropriate code in example.js.
 
 Note: this was designed using Babel 7 and I haven't tested it on anything else. I super don't guarantee that this is totally flawless - it's one of those toy projects that I'll probably publish and forget about.
 
