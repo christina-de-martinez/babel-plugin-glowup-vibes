@@ -13,5 +13,6 @@ module.exports = {
     "ship": "exports",
     "outOfPocket": "Infinity",
     "PERIODT": "break",
-    "based": "toLowerCase"
+    "based": "toLowerCase",
+    "itsGiving": "return",
 };
