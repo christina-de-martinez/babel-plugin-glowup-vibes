@@ -11,6 +11,7 @@ module.exports = function () {
         tea: "info",
         L: "Error",
         fr: "assert",
+        letItCook: "await",
         grab: "require",
         ship: "exports",
         itsGiving: "return",
