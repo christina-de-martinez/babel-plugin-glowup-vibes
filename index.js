@@ -14,6 +14,7 @@ module.exports = function () {
         grab: "require",
         ship: "exports",
         itsGiving: "return",
+        n: "&&"
     };
 
     const handleIdentifier = (path) => {
