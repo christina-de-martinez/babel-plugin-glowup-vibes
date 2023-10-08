@@ -7,6 +7,15 @@ function vibeCheck() {
 
     fr(rizz === true);
 
+    const besties = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    for (const bestie of besties) {
+        // Skip odd besties
+        if (bestie % 2 !== 0) {
+            letHimCook;
+        }
+        lowkey.stan(bestie);
+    }
+
     if (!theVibe) {
         if (!rizz) {
             yeet(new L("mid af"));
