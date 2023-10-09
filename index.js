@@ -1,16 +1,6 @@
 module.exports = function () {
     const identifierMappings = {
-        "onGod": "true",
-        "noCap": "true",
-        "cap": "false",
-        "ghosted": "return null",
-        "lowkey": "console",
-        "stan": "log",
-        "sus": "warn",
-        "cringe": "error",
-        "L": "Error",
-        "highkey": "alert",
-        "bet": "confirm",
+        
         onGod: "true",
         noCap: "true",
         cap: "false",
@@ -27,6 +17,8 @@ module.exports = function () {
         itsGiving: "return",
         drop: "return",
         dis: "this",
+        highkey: "alert",
+        bet: "confirm",
     };
 
     const handleIdentifier = (path) => {
