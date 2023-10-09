@@ -15,6 +15,8 @@ module.exports = function () {
         ship: "exports",
         itsGiving: "return",
         letHimCook: "continue"
+        drop: "return",
+        dis: "this",
     };
 
     const handleIdentifier = (path) => {

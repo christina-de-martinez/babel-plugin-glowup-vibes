@@ -79,6 +79,8 @@ module.ship = vibe | module.exports = vibe
 fr(assertion) | assert(assertion)
 itsGiving(thingToReturn) | return thingToReturn;
 letHimCook; | continue;
+drop(thingToReturn) | return thingToReturn;
+dis | this
 
 ## Contributing
 
