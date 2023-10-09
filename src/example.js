@@ -19,7 +19,7 @@ function vibeCheck() {
             lowkey.tea("you should talk to someone about that queen 👑");
             itsGiving(depression);
         }
-        lowkey.stan("slay");
+        lowkey.stan("SLAY".based());
         ghosted;
     }
 }

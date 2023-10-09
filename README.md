@@ -78,9 +78,8 @@ grab("stash") | require("stash")
 module.ship = vibe | module.exports = vibe
 fr(assertion) | assert(assertion)
 itsGiving(thingToReturn) | return thingToReturn;
-outOfPocket: Infinity,
-PERIODT: break,
-"YO".based(): "YO".toLowerCase(),
+outOfPocket | Infinity,
+"YO".based() | "YO".toLowerCase(),
 
 ## Contributing
 
