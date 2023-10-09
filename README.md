@@ -80,6 +80,8 @@ fr(assertion) | assert(assertion)
 itsGiving(thingToReturn) | return thingToReturn;
 String.prototype.highkey() | String.prototype.toUpperCase()
 String.prototype.lowkey() | String.prototype.toLowerCase()
+drop(thingToReturn) | return thingToReturn;
+dis | this
 
 ## Contributing
 

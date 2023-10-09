@@ -16,6 +16,8 @@ module.exports = function (babel) {
         grab: "require",
         ship: "exports",
         itsGiving: "return",
+        drop: "return",
+        dis: "this",
     };
 
     const handleIdentifier = (path) => {
