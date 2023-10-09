@@ -3,6 +3,16 @@ function vibeCheck() {
     const rizz = onGod;
     const depression = noCap;
 
+    const myGuy = {
+        heat: "Yuh I'm droppin dis heat ❗❗",
+
+        letHimCook: function () {
+            drop(dis.heat);
+        }
+    }
+
+    lowkey.stan(myGuy.letHimCook());
+
     lowkey.sus("the vibes might be off 💀");
 
     fr(rizz === true);
@@ -25,3 +35,4 @@ function vibeCheck() {
 }
 
 module.ship = vibeCheck;
+
