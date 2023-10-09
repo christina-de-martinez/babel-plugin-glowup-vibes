@@ -74,6 +74,9 @@ lowkey.tea("message") | console.info("message")
 throw new L("message") | throw new Error("message")
 yeet(new L("message")) | throw new Error("message")
 PERIODT | break
+fuck around | try
+find out | catch
+either way | finally
 grab("stash") | require("stash")
 module.ship = vibe | module.exports = vibe
 fr(assertion) | assert(assertion)
