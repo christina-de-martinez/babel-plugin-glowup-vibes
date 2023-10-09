@@ -1,7 +1,6 @@
 module.exports = function () {
     const identifierMappings = require("./identifierMappings.js")
 
-
     const handleIdentifier = (path) => {
         const newName = identifierMappings[path.node.name];
         if (newName) {

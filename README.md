@@ -80,7 +80,7 @@ fr(assertion) | assert(assertion)
 itsGiving(thingToReturn) | return thingToReturn;
 outOfPocket | Infinity
 "YO".based() | "YO".toLowerCase()
-drop | return
+drop(thingToReturn) | return thingToReturn;
 dis | this
 
 ## Contributing
