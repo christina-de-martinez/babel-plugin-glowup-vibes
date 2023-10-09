@@ -2,11 +2,11 @@
 
 ## The most goated Babel plugin
 
-This plugin was high key inspired by an Instagram reel by @justin.makes.things: https://www.instagram.com/reel/Cwn5KYtIWDm/
+This plugin was high key inspired by an Instagram reel by @justin.makes.things: <https://www.instagram.com/reel/Cwn5KYtIWDm/>
 
 I was shook. I thought it hit different so I said "bet" and started flexin on em. IYKYK fam.
 
-Here's my stitch on Instagram: https://www.instagram.com/reel/Cxvwz76vBus/
+Here's my stitch on Instagram: <https://www.instagram.com/reel/Cxvwz76vBus/>
 
 Or, watch my YouTube short #likeAndSubscribe
 
@@ -27,7 +27,8 @@ This was a fun project to increase my AST rizz. I'm a Babel simp now 👉👈
 In case you need more detailed instructions than that:
 
 To set up babel, create a `babel.config.json` file and add the following to it:
-```
+
+```json
 {
     "presets": [
         [
@@ -49,11 +50,14 @@ To set up babel, create a `babel.config.json` file and add the following to it:
 ```
 
 Add something like this to your `package.json` file:
-```
+
+```json
 "scripts": {
     "build": "babel ./src/script.js --out-file ./lib/compiled.js"
 },
 ```
+
+Note: this was designed using Babel 7 and I haven't tested it on anything else. I super don't guarantee that this is totally flawless.
 
 ## Options
 
@@ -66,19 +70,34 @@ ghosted | return null
 lowkey.stan("message") | console.log("message")
 lowkey.sus("message") | console.warn("message")
 lowkey.cringe("message") | console.error("message")
+lowkey.tea("message") | console.info("message")
 throw new L("message") | throw new Error("message")
 yeet(new L("message")) | throw new Error("message")
 PERIODT | break
 highkey | alert
 bet | confirm
+grab("stash") | require("stash")
+module.ship = vibe | module.exports = vibe
+fr(assertion) | assert(assertion)
+itsGiving(thingToReturn) | return thingToReturn;
+drop(thingToReturn) | return thingToReturn;
+dis | this
 
 ## Contributing
 
 I welcome PRs if you can think of ways to make this even more bussin.
 
+If you want to contribute, but you don't know where to start, that's great! Watch this YouTube video to learn more about Babel plugins: <https://www.youtube.com/watch?v=aK6n0pYcOe8>
+
+AST explorer is also a great tool to learn about ASTs and test some of your ideas. <https://astexplorer.net/>
+
 When you submit a PR, don't forget to update the table in the README along with the appropriate code in example.js.
 
-Note: this was designed using Babel 7 and I haven't tested it on anything else. I super don't guarantee that this is totally flawless - it's one of those toy projects that I'll probably publish and forget about.
+## Does this exist in (insert coding language)?
+
+There is a C++ version! <https://twitter.com/lauriewired/status/1684329735399313409>
+
+Other than that, the answer is probably no. But you should make one!!
 
 ## License
 
