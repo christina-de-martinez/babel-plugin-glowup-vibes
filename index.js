@@ -1,5 +1,4 @@
 module.exports = function () {
-
     const identifierMappings = require("./identifierMappings.js")
 
     const handleIdentifier = (path) => {
