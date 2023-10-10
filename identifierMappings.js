@@ -18,5 +18,6 @@ module.exports = {
   outOfPocket: "Infinity",
   PERIODT: "break",
   period: "break",
+  skrt: "break",
   based: "toLowerCase",
 };
