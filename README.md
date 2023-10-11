@@ -20,9 +20,9 @@ This was a fun project to increase my AST rizz. I'm a Babel simp now 👉👈
 
 ## How to use it
 
-* Install `npm install babel-plugin-glowup-vibes --save`
-* Set up babel and add `babel-plugin-glowup-vibes` to your list of plugins
-* Highkey start flexing. Use the options outlined in [Options](#options). Running your build command should be a major W. Look for big JavaScript vibes wherever you set the output to go (in our example below, it'll be in `lib/compiled.js`)
+- Install `npm install babel-plugin-glowup-vibes --save`
+- Set up babel and add `babel-plugin-glowup-vibes` to your list of plugins
+- Highkey start flexing. Use the options outlined in [Options](#options). Running your build command should be a major W. Look for big JavaScript vibes wherever you set the output to go (in our example below, it'll be in `lib/compiled.js`)
 
 In case you need more detailed instructions than that:
 
@@ -30,22 +30,22 @@ To set up babel, create a `babel.config.json` file and add the following to it:
 
 ```json
 {
-    "presets": [
-        [
-            "@babel/preset-env",
-            {
-                "targets": {
-                    "edge": "17",
-                    "firefox": "60",
-                    "chrome": "67",
-                    "safari": "11.1"
-                },
-                "useBuiltIns": "usage",
-                "corejs": "3.6.5"
-            }
-        ]
-    ],
-    "plugins": ["babel-plugin-glowup-vibes"]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "edge": "17",
+          "firefox": "60",
+          "chrome": "67",
+          "safari": "11.1"
+        },
+        "useBuiltIns": "usage",
+        "corejs": "3.6.5"
+      }
+    ]
+  ],
+  "plugins": ["babel-plugin-glowup-vibes"]
 }
 ```
 
@@ -61,40 +61,46 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 
 ## Options
 
-Your Code | JS
---- | ---
-noCap | true
-cap | false
-onGod | true
-lowkey.stan("message") | console.log("message")
-lowkey.sus("message") | console.warn("message")
-lowkey.cringe("message") | console.error("message")
-lowkey.tea("message") | console.info("message")
-throw new L("message") | throw new Error("message")
-yeet(new L("message")) | throw new Error("message")
-ghosted | return null
-drop(thingToReturn) | return thingToReturn;
-itsGiving(thingToReturn) | return thingToReturn;
-PERIODT | break
-period | break
-holdUp(veryCoolFunction) | async function veryCoolFunction()
-letItCook(thingToAwait) | await thingToAwait
-grab("stash") | require("stash")
-module.ship = vibe | module.exports = vibe
-fr(assertion) | assert(assertion)
-outOfPocket | Infinity
-"BLAT".based() | "BLAT".toLowerCase()
-dis | this
+| Your Code                | JS                                |
+| ------------------------ | --------------------------------- |
+| noCap                    | true                              |
+| cap                      | false                             |
+| onGod                    | true                              |
+| lowkey.stan("message")   | console.log("message")            |
+| lowkey.sus("message")    | console.warn("message")           |
+| lowkey.cringe("message") | console.error("message")          |
+| lowkey.tea("message")    | console.info("message")           |
+| throw new L("message")   | throw new Error("message")        |
+| yeet(new L("message"))   | throw new Error("message")        |
+| ghosted                  | return null                       |
+| drop(thingToReturn)      | return thingToReturn;             |
+| itsGiving(thingToReturn) | return thingToReturn;             |
+| PERIODT                  | break                             |
+| period                   | break                             |
+| holdUp(veryCoolFunction) | async function veryCoolFunction() |
+| letItCook(thingToAwait)  | await thingToAwait                |
+| grab("stash")            | require("stash")                  |
+| module.ship = vibe       | module.exports = vibe             |
+| fr(assertion)            | assert(assertion)                 |
+| outOfPocket              | Infinity                          |
+| "BLAT".based()           | "BLAT".toLowerCase()              |
+| dis                      | this                              |
 
 ## Contributing
 
 I welcome PRs if you can think of ways to make this even more bussin.
 
+Your PR will be merged faster if you do these things:
+
+- Update the table in the README
+- Provide an example in example.js
+- Test your work by running `npm run build` and checking `compiled.js` to see whether it worked how you thought
+- Format your code by running `npm run test`
+- Bonus points if you write tests
+
 If you want to contribute, but you don't know where to start, that's great! Watch this YouTube video to learn more about Babel plugins: <https://www.youtube.com/watch?v=aK6n0pYcOe8>
 
 AST explorer is also a great tool to learn about ASTs and test some of your ideas. <https://astexplorer.net/>
-
-When you submit a PR, don't forget to update the table in the README along with the appropriate code in example.js.
 
 ## Does this exist in (insert coding language)?
 
