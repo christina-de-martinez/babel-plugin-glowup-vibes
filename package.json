@@ -3,6 +3,7 @@
     "version": "1.0.8",
     "description": "babel plugin to transpile internet slang into valid javascript",
     "main": "index.js",
+    "types": "index.d.ts",
     "scripts": {
         "test": "jest",
         "build": "babel ./src/example.js --out-file ./lib/compiled.js"
