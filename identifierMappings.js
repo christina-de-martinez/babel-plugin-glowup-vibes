@@ -7,6 +7,7 @@ module.exports = {
     stan: "log",
     sus: "warn",
     cringe: "error",
+    tea: "info",
     L: "Error",
     fr: "assert",
     grab: "require",
@@ -16,5 +17,6 @@ module.exports = {
     dis: "this",
     outOfPocket: "Infinity",
     PERIODT: "break",
+    period: "break",
     based: "toLowerCase",
 };
