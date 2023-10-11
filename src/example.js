@@ -1,3 +1,7 @@
+holdUp(function sis() {
+    letItCook(vibeCheck);
+});
+
 function vibeCheck() {
     const theVibe = cap;
     const rizz = onGod;
@@ -8,14 +12,14 @@ function vibeCheck() {
 
         letHimCook: function () {
             drop(dis.heat);
-        }
-    }
+        },
+    };
 
     lowkey.stan(myGuy.letHimCook());
 
     lowkey.sus("the vibes might be off 💀");
 
-    fr(rizz === true);
+    fr(typeof sis === "function");
 
     if (!theVibe) {
         if (!rizz) {
@@ -29,10 +33,9 @@ function vibeCheck() {
             lowkey.tea("you should talk to someone about that queen 👑");
             itsGiving(depression);
         }
-        lowkey.stan("slay");
+        lowkey.stan("SLAY".based());
         ghosted;
     }
 }
 
 module.ship = vibeCheck;
-

@@ -66,21 +66,26 @@ Your Code | JS
 noCap | true
 cap | false
 onGod | true
-ghosted | return null
 lowkey.stan("message") | console.log("message")
 lowkey.sus("message") | console.warn("message")
 lowkey.cringe("message") | console.error("message")
 lowkey.tea("message") | console.info("message")
 throw new L("message") | throw new Error("message")
 yeet(new L("message")) | throw new Error("message")
+ghosted | return null
+drop(thingToReturn) | return thingToReturn;
+itsGiving(thingToReturn) | return thingToReturn;
 PERIODT | break
 highkey | alert
 bet | confirm
+period | break
+holdUp(veryCoolFunction) | async function veryCoolFunction()
+letItCook(thingToAwait) | await thingToAwait
 grab("stash") | require("stash")
 module.ship = vibe | module.exports = vibe
 fr(assertion) | assert(assertion)
-itsGiving(thingToReturn) | return thingToReturn;
-drop(thingToReturn) | return thingToReturn;
+outOfPocket | Infinity
+"BLAT".based() | "BLAT".toLowerCase()
 dis | this
 
 ## Contributing
