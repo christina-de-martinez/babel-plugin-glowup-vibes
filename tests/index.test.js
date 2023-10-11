@@ -133,3 +133,12 @@ test(`Should replace yeet with throw`, () => {
     }).code;
     expect(output).toEqual(expected);
 });
+
+test(`Should replace fam with class`, () => {
+    const input = `fam`;
+    const expected = `"use strict";\n\nclass`;
+    const output = babel.transform(input, {
+        plugins: [glowupVibes],
+    }).code;
+    expect(output).toEqual(expected);
+});
