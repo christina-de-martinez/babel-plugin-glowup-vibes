@@ -82,6 +82,8 @@ outOfPocket | Infinity
 "YO".based() | "YO".toLowerCase()
 drop(thingToReturn) | return thingToReturn;
 dis | this
+boomer | parent
+YO("message") | alert("message")
 
 ## Contributing
 

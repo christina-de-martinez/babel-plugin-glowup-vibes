@@ -17,4 +17,6 @@ module.exports = {
     outOfPocket: "Infinity",
     PERIODT: "break",
     based: "toLowerCase",
+    boomer: "parent",
+    YO: "alert",
 };
