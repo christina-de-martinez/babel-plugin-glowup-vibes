@@ -85,6 +85,8 @@ fr(assertion) | assert(assertion)
 outOfPocket | Infinity
 "BLAT".based() | "BLAT".toLowerCase()
 dis | this
+boomer | parent
+YO("message") | alert("message")
 
 ## Contributing
 

@@ -133,3 +133,21 @@ test(`Should replace yeet with throw`, () => {
     }).code;
     expect(output).toEqual(expected);
 });
+
+test(`Should replace boomer with parent`, () => {
+    const input = `boomer;`;
+    const expected = `"use strict";\n\nparent;`;
+    const output = babel.transform(input, {
+        plugins: [glowupVibes],
+    }).code;
+    expect(output).toEqual(expected);
+});
+
+test(`Should replace YO with alert`, () => {
+    const input = `YO("watch out");`;
+    const expected = `"use strict";\n\nalert("watch out");`;
+    const output = babel.transform(input, {
+        plugins: [glowupVibes],
+    }).code;
+    expect(output).toEqual(expected);
+});

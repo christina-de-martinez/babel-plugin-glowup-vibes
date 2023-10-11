@@ -19,4 +19,6 @@ module.exports = {
     PERIODT: "break",
     period: "break",
     based: "toLowerCase",
+    boomer: "parent",
+    YO: "alert",
 };
