@@ -38,4 +38,10 @@ function vibeCheck() {
     }
 }
 
+fam WeBesties{
+    constructor(name1) {
+        this.name = name1
+      }
+}
+
 module.ship = vibeCheck;

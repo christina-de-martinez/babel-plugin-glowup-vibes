@@ -85,6 +85,7 @@ fr(assertion) | assert(assertion)
 outOfPocket | Infinity
 "BLAT".based() | "BLAT".toLowerCase()
 dis | this
+fam | class
 
 ## Contributing
 
