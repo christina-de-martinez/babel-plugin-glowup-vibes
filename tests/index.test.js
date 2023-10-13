@@ -135,10 +135,10 @@ test(`Should replace yeet with throw`, () => {
 });
 
 test(`Should replace clapback with yield`, () => {
-    const input = `function* vibes() { clapback(1); }`;
-    const expected = `"use strict";\n\nfunction* vibes() {\n  yield 1;\n}`;
-    const output = babel.transform(input, {
-        plugins: [glowupVibes],
-    }).code;
-    expect(output).toEqual(expected);
+  const input = `function* vibes() { clapback(1); }`;
+  const expected = `"use strict";\n\nfunction* vibes() {\n  yield 1;\n}`;
+  const output = babel.transform(input, {
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
 });
