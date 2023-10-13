@@ -85,6 +85,7 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | outOfPocket              | Infinity                          |
 | "BLAT".based()           | "BLAT".toLowerCase()              |
 | dis                      | this                              |
+| clapback(1)              | yield 1                           |
 
 ## Contributing
 
