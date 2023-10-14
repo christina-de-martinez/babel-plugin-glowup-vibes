@@ -15,6 +15,8 @@ function vibeCheck() {
     },
   };
 
+  lowkey.crowed("The crow screams murder");
+
   lowkey.stan(myGuy.letHimCook());
 
   lowkey.sus("the vibes might be off 💀");

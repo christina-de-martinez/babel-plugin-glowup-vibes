@@ -62,12 +62,13 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 ## Options
 
 | Your Code                | JS                                |
-| ------------------------ | --------------------------------- |
+|--------------------------|-----------------------------------|
 | noCap                    | true                              |
 | cap                      | false                             |
 | onGod                    | true                              |
 | lowkey.stan("message")   | console.log("message")            |
 | lowkey.sus("message")    | console.warn("message")           |
+| lowkey.crowed("message") | console.debug("message")          |
 | lowkey.cringe("message") | console.error("message")          |
 | lowkey.tea("message")    | console.info("message")           |
 | throw new L("message")   | throw new Error("message")        |
