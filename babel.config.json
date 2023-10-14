@@ -1,4 +1,5 @@
 {
+  "ignore": ["./identifierMappings.js"],
   "presets": [
     [
       "@babel/preset-env",
