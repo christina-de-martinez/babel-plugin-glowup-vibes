@@ -4,7 +4,7 @@ holdUp(function sis() {
 
 function vibeCheck() {
   const theVibe = cap;
-  const rizz = onGod;
+  const rizz = finna("u simpin'?") ? cap : onGod;
   const depression = noCap;
 
   const myGuy = {
