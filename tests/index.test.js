@@ -151,3 +151,30 @@ test(`Should replace clapback with yield`, () => {
   }).code;
   expect(output).toEqual(expected);
 });
+
+test(`Should replace boss with const`, () => {
+  const input = `boss("vibes", false)`;
+  const expected = `"use strict";\n\nconst vibes = false;`;
+  const output = babel.transform(input, {
+      plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test(`Should replace homie with let`, () => {
+  const input = `homie("vibes", false)`;
+  const expected = `"use strict";\n\nlet vibes = false;`;
+  const output = babel.transform(input, {
+      plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test(`Should replace dude with var`, () => {
+  const input = `dude("vibes", false)`;
+  const expected = `"use strict";\n\nvar vibes = false;`;
+  const output = babel.transform(input, {
+      plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});

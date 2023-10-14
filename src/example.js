@@ -3,9 +3,8 @@ holdUp(function sis() {
 });
 
 function vibeCheck() {
-  const theVibe = cap;
-  const rizz = finna("u simpin'?") ? cap : onGod;
-  const depression = noCap;
+  boss("theVibe", cap);
+  dude("rizz", finna("u simpin'?") ? cap : onGod);
 
   const myGuy = {
     heat: "Yuh I'm droppin dis heat ❗❗",
@@ -29,6 +28,7 @@ function vibeCheck() {
       yeet(new Error("major L"));
     }
   } else {
+    homie("depression", noCap);
     if (depression === true) {
       lowkey.tea("you should talk to someone about that queen 👑");
       itsGiving(depression);
