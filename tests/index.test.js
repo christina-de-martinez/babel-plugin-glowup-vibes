@@ -116,6 +116,15 @@ test("Should replace PERIODT with break", () => {
   expect(output).toEqual(expected);
 });
 
+test("Should replace skrt with break", () => {
+  const input = `for (let i = 0; i < 10; i++) skrt;`;
+  const expected = `"use strict";\n\nfor (let i = 0; i < 10; i++) break;`;
+  const output = babel.transform(input, {
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
 test(`Should replace based with toLowerCase`, () => {
   const input = `"YIKES FAM".based();`;
   const expected = `"use strict";\n\n"YIKES FAM".toLowerCase();`;
