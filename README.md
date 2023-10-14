@@ -77,6 +77,7 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | itsGiving(thingToReturn) | return thingToReturn;             |
 | PERIODT                  | break                             |
 | period                   | break                             |
+| skrt                     | break                             |
 | holdUp(veryCoolFunction) | async function veryCoolFunction() |
 | letItCook(thingToAwait)  | await thingToAwait                |
 | grab("stash")            | require("stash")                  |
@@ -107,9 +108,11 @@ AST explorer is also a great tool to learn about ASTs and test some of your idea
 
 There is a C++ version! <https://twitter.com/lauriewired/status/1684329735399313409>
 
-Also a Dart (someone tried): <https://pub.dev/packages/glowup_vibes>
+Also in Dart: <https://pub.dev/packages/glowup_vibes>
 
 Other than that, the answer is probably no. But you should make one!!
+
+Honorable mention: Thy Script, the 1500s version <https://github.com/dlustre/babel-plugin-thy-script>
 
 ## License
 
