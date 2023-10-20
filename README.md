@@ -89,6 +89,9 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | dis                      | this                              |
 | clapback(1)              | yield 1                           |
 | finna("message")         | confirm("message")                |
+| boss("a", false)         | const a = false                   |
+| homie("b", false)        | let b = false                     |
+| dude("c", true)          | var c = true                      |
 
 ## Contributing
 
