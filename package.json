@@ -40,5 +40,11 @@
   },
   "dependencies": {
     "core-js": "^3.33.0"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/",
+      "./identifierMappings.js" 
+    ]
   }
 }
