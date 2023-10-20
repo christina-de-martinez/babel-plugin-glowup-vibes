@@ -6,6 +6,7 @@ module.exports = {
   lowkey: "console",
   stan: "log",
   sus: "warn",
+  crowed: "debug",
   cringe: "error",
   tea: "info",
   L: "Error",
