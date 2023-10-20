@@ -1,42 +1,50 @@
 {
-    "name": "babel-plugin-glowup-vibes",
-    "version": "1.0.8",
-    "description": "babel plugin to transpile internet slang into valid javascript",
-    "main": "index.js",
-    "scripts": {
-        "test": "jest",
-        "build": "babel ./src/example.js --out-file ./lib/compiled.js"
-    },
-    "author": "Christina Martinez",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/christina-de-martinez/babel-plugin-glowup-vibes"
-    },
-    "bugs": {
-        "url": "https://github.com/christina-de-martinez/babel-plugin-glowup-vibes/issues"
-    },
-    "homepage": "https://github.com/christina-de-martinez/babel-plugin-glowup-vibes#readme",
-    "license": "MIT",
-    "keywords": [
-        "babel-plugin",
-        "christina.codes",
-        "gen z",
-        "internet slang",
-        "slang",
-        "goated",
-        "lit",
-        "sick",
-        "vibes",
-        "major w",
-        "yeet"
-    ],
-    "devDependencies": {
-        "@babel/cli": "^7.23.0",
-        "@babel/core": "^7.23.0",
-        "@babel/preset-env": "^7.22.20",
-        "jest": "^29.7.0"
-    },
-    "dependencies": {
-        "core-js": "^3.33.0"
-    }
+  "name": "babel-plugin-glowup-vibes",
+  "version": "1.0.9",
+  "description": "babel plugin to transpile internet slang into valid javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel ./src/example.js --out-file ./lib/compiled.js",
+    "lint": "npx prettier . --write"
+  },
+  "author": "Christina Martinez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christina-de-martinez/babel-plugin-glowup-vibes"
+  },
+  "bugs": {
+    "url": "https://github.com/christina-de-martinez/babel-plugin-glowup-vibes/issues"
+  },
+  "homepage": "https://github.com/christina-de-martinez/babel-plugin-glowup-vibes#readme",
+  "license": "MIT",
+  "keywords": [
+    "babel-plugin",
+    "christina.codes",
+    "gen z",
+    "internet slang",
+    "slang",
+    "goated",
+    "lit",
+    "sick",
+    "vibes",
+    "major w",
+    "yeet"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "jest": "^29.7.0",
+    "prettier": "3.0.3"
+  },
+  "dependencies": {
+    "core-js": "^3.33.0"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/",
+      "./identifierMappings.js" 
+    ]
+  }
 }
