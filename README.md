@@ -110,7 +110,9 @@ AST explorer is also a great tool to learn about ASTs and test some of your idea
 
 There is a C++ version! <https://twitter.com/lauriewired/status/1684329735399313409>
 
-Also in Dart: <https://pub.dev/packages/glowup_vibes>
+@renancaraujo created a Dart version: <https://pub.dev/packages/glowup_vibes>
+
+@chelseas created a Julia version: <https://github.com/chelseas/GlowupVibes.jl>
 
 Other than that, the answer is probably no. But you should make one!!
 
