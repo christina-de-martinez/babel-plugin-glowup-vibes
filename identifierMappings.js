@@ -26,4 +26,5 @@ module.exports = {
   SeveralSeats: "Array",
   take: "fill",
   vibeOnEvent: "addEventListener",
+  slay: "continue",
 };
