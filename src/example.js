@@ -1,3 +1,5 @@
+const { lowkey } = require("../identifierMappings");
+
 holdUp(function sis() {
   letItCook(vibeCheck);
 });
@@ -14,6 +16,14 @@ function vibeCheck() {
       drop(dis.heat);
     },
   };
+
+  for(let i = 0; i<2; i++){
+    if(theVibe){
+      slay;
+    } else {
+      lowkey.stan("Not the vibe");
+    }
+  }
 
   lowkey.crowed("The crow screams murder");
 

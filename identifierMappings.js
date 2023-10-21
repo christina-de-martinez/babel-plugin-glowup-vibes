@@ -22,4 +22,5 @@ module.exports = {
   skrt: "break",
   based: "toLowerCase",
   finna: "confirm",
+  slay: "continue",
 };
