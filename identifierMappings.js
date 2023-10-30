@@ -22,4 +22,6 @@ module.exports = {
   skrt: "break",
   based: "toLowerCase",
   finna: "confirm",
+  SeveralSeats: "Array",
+  take: "fill"
 };

@@ -167,3 +167,23 @@ test(`Should replace clapback with yield`, () => {
   }).code;
   expect(output).toEqual(expected);
 });
+
+test(`Should replace SeveralSeats with Array`, () => {
+  const input = `new SeveralSeats(2);`;
+  const expected = `"use strict";\n\nnew Array(2);`;
+  const output = babel.transform(input, {
+    filename: './../src/example.js', 
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test(`Should replace take with fill`, () => {
+  const input = `new SeveralSeats(2).take(true)`;
+  const expected = `"use strict";\n\nrequire("core-js/modules/es.promise.js");\nnew Array(2).fill(true);`;
+  const output = babel.transform(input, {
+    filename: './../src/example.js', 
+    plugins: [glowupVibes],
+  }).code;  
+  expect(output).toEqual(expected);
+});

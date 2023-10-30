@@ -24,6 +24,9 @@ function vibeCheck() {
   fr(typeof sis === "function");
 
   if (!theVibe) {
+    const severalSeats = new SeveralSeats(2);
+    severalSeats.take(true);
+
     if (!rizz) {
       yeet(new L("mid af"));
     } else {
