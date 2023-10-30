@@ -61,6 +61,7 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 
 ## Options
 
+
 | Your Code                | JS                                |
 |--------------------------|-----------------------------------|
 | noCap                    | true                              |
@@ -89,6 +90,9 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | dis                      | this                              |
 | clapback(1)              | yield 1                           |
 | finna("message")         | confirm("message")                |
+| highkey                  | alert                             |
+| bet                      | confirm                           |
+
 
 ## Contributing
 

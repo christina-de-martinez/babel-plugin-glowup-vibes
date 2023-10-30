@@ -1,5 +1,28 @@
 module.exports = function () {
-  const identifierMappings = require("./identifierMappings.js");
+
+    const identifierMappings = {
+        
+        onGod: "true",
+        noCap: "true",
+        cap: "false",
+        ghosted: "return null",
+        lowkey: "console",
+        stan: "log",
+        sus: "warn",
+        cringe: "error",
+        tea: "info",
+        L: "Error",
+        fr: "assert",
+        grab: "require",
+        ship: "exports",
+        itsGiving: "return",
+        drop: "return",
+        dis: "this",
+        highkey: "alert",
+        bet: "confirm",
+    };
+    const identifierMappings = require("./identifierMappings.js");
+
 
   const handleIdentifier = (path) => {
     const newName = identifierMappings[path.node.name];
