@@ -85,6 +85,7 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | module.ship = vibe       | module.exports = vibe             |
 | fr(assertion)            | assert(assertion)                 |
 | outOfPocket              | Infinity                          |
+| "blat".goated()          | "blat".toUpperCase()              |
 | "BLAT".based()           | "BLAT".toLowerCase()              |
 | dis                      | this                              |
 | clapback(1)              | yield 1                           |

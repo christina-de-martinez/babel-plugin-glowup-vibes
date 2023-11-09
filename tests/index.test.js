@@ -138,6 +138,16 @@ test("Should replace skrt with break", () => {
   expect(output).toEqual(expected);
 });
 
+test(`Should replace based with toUpperCase`, () => {
+  const input = `"deadass".goated();`;
+  const expected = `"use strict";\n\n"deadass".toUpperCase();`;
+  const output = babel.transform(input, {
+    filename: './../src/example.js', 
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
 test(`Should replace based with toLowerCase`, () => {
   const input = `"YIKES FAM".based();`;
   const expected = `"use strict";\n\n"YIKES FAM".toLowerCase();`;
