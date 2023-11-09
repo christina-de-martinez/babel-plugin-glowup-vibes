@@ -21,6 +21,7 @@ module.exports = {
   period: "break",
   skrt: "break",
   based: "toLowerCase",
+  goated: "toUpperCase",
   finna: "confirm",
   SeveralSeats: "Array",
   take: "fill",
