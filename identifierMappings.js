@@ -23,5 +23,6 @@ module.exports = {
   based: "toLowerCase",
   finna: "confirm",
   SeveralSeats: "Array",
-  take: "fill"
+  take: "fill",
+  vibeOnEvent: "addEventListener"
 };

@@ -39,12 +39,13 @@
     "prettier": "3.0.3"
   },
   "dependencies": {
+    "babel-plugin-glowup-vibes": "^1.0.9",
     "core-js": "^3.33.0"
   },
   "jest": {
     "transformIgnorePatterns": [
       "/node_modules/",
-      "./identifierMappings.js" 
+      "./identifierMappings.js"
     ]
   }
 }

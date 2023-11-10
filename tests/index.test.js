@@ -187,3 +187,13 @@ test(`Should replace take with fill`, () => {
   }).code;  
   expect(output).toEqual(expected);
 });
+
+test(`Should replace addEventListener with vibeOnEvent`, () => {
+  const input = `document.vibeOnEvent("click", () => console.log("yikes fam"));`;
+  const expected = `"use strict";\n\ndocument.addEventListener("click", () => console.log("yikes fam"));`;
+  const output = babel.transform(input, {
+    filename: './../src/example.js', 
+    plugins: [glowupVibes],
+  });
+  expect(output.code).toEqual(expected);
+})
