@@ -88,7 +88,7 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | "BLAT".based()           | "BLAT".toLowerCase()              |
 | dis                      | this                              |
 | clapback(1)              | yield 1                           |
-| finna("message")         | confirm("message")                |
+| finna("message")         | confirm("message")                | function         | drip                |
 
 ## Contributing
 
