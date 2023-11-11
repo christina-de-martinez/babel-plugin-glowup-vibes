@@ -74,6 +74,21 @@ module.exports = function () {
       };
       path.replaceWith(newNode);
     }
+
+    // Add "function" keyword as "drip"
+    if (
+        node.expression.type === "CallExpression" &&
+        node.expression.callee.name === "drip"
+    ) {
+        const argument = node.expression.arguments[0];
+        const functionExpression = {
+          type: "FunctionExpression",
+          params: [],
+          body: argument.body,
+        };
+        path.replaceWith(functionExpression);
+      }
+  
   };
 
   return {
