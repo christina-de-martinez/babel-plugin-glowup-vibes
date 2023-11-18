@@ -15,7 +15,7 @@ function vibeCheck() {
     },
   };
 
-  lowkey.crowed("The crow screams murder");
+  lowkey.crowed("The crow screams murder".goated());
 
   lowkey.stan(myGuy.letHimCook());
 
