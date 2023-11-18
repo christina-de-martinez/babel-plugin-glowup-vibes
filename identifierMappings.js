@@ -24,5 +24,5 @@ module.exports = {
   finna: "confirm",
   SeveralSeats: "Array",
   take: "fill",
-  vibeOnEvent: "addEventListener"
+  vibeOnEvent: "addEventListener",
 };

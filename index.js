@@ -75,13 +75,12 @@ module.exports = function () {
       path.replaceWith(newNode);
     }
 
-  if (
-    node.expression.type === "CallExpression" &&
-    node.expression.callee.name === "vibeOnEvent"
-  ) {
-    const args = node.expression.arguments;
-  }
-
+    if (
+      node.expression.type === "CallExpression" &&
+      node.expression.callee.name === "vibeOnEvent"
+    ) {
+      const args = node.expression.arguments;
+    }
   };
   return {
     visitor: {
