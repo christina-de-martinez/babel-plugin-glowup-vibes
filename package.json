@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-glowup-vibes",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "babel plugin to transpile internet slang into valid javascript",
   "main": "index.js",
   "scripts": {
@@ -39,7 +39,7 @@
     "prettier": "3.0.3"
   },
   "dependencies": {
-    "babel-plugin-glowup-vibes": "^1.0.9",
+    "babel-plugin-glowup-vibes": "^1.0.10",
     "core-js": "^3.33.0"
   },
   "jest": {
