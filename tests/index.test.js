@@ -207,3 +207,12 @@ test(`Should replace addEventListener with vibeOnEvent`, () => {
   });
   expect(output.code).toEqual(expected);
 });
+test("Should replace slay with continue", () => {
+  const input = `slay`;
+  const expected = `"use strict";\n\ncontinue;`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});

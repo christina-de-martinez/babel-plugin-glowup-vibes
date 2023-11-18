@@ -16,6 +16,13 @@ function vibeCheck() {
   };
 
   lowkey.crowed("The crow screams murder".goated());
+  for (let i = 0; i < 2; i++) {
+    if (theVibe) {
+      slay;
+    } else {
+      lowkey.stan("Not the vibe");
+    }
+  }
 
   lowkey.stan(myGuy.letHimCook());
 
