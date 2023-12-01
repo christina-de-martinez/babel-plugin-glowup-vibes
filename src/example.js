@@ -30,6 +30,8 @@ function vibeCheck() {
 
   fr(typeof sis === "function");
 
+  highkey("Highkey alerting!");
+
   if (!theVibe) {
     const severalSeats = new SeveralSeats(2);
     severalSeats.take(true);
