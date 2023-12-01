@@ -62,7 +62,7 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 ## Options
 
 | Your Code                                       | JS                                                   |
-| ----------------------------------------------- | ---------------------------------------------------- |
+|-------------------------------------------------|------------------------------------------------------|
 | noCap                                           | true                                                 |
 | cap                                             | false                                                |
 | onGod                                           | true                                                 |
@@ -91,6 +91,7 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | clapback(1)                                     | yield 1                                              |
 | finna("message")                                | confirm("message")                                   |
 | document.vibeOnEvent(event, function, options); | document.addEventListener(event, function, options); |
+| chill(args)                                     | setTimeout(args)                                     |
 
 ## Contributing
 
