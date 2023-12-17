@@ -28,4 +28,5 @@ module.exports = {
   vibeOnEvent: "addEventListener",
   slay: "continue",
   Bet: "Promise",
+  chill: "setTimeout",
 };

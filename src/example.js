@@ -37,6 +37,9 @@ function vibeCheck() {
   });
 
   newBet.then(lowkey.stan);
+  chill(() => {
+    lowkey.stan("Let's chill for a sec.");
+  }, 1000);
 
   if (!theVibe) {
     const severalSeats = new SeveralSeats(2);
