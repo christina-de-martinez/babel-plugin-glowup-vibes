@@ -30,6 +30,8 @@ function vibeCheck() {
 
   fr(typeof sis === "function");
 
+  highkey("Highkey alerting!");
+
   const newBet = new Bet((resolve, _reject) => {
     setTimeout(() => {
       resolve("foo");

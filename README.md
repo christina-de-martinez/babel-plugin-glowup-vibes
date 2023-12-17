@@ -91,6 +91,7 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | clapback(1)                                     | yield 1                                              |
 | finna("message")                                | confirm("message")                                   |
 | document.vibeOnEvent(event, function, options); | document.addEventListener(event, function, options); |
+| highkey("message")                              | alert("message")                                                    |
 | Bet                                             | Promise                                              |
 | chill(args)                                     | setTimeout(args)                                     |
 

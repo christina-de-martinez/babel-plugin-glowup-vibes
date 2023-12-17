@@ -27,6 +27,7 @@ module.exports = {
   take: "fill",
   vibeOnEvent: "addEventListener",
   slay: "continue",
+  highkey: "alert",
   Bet: "Promise",
   chill: "setTimeout",
 };
