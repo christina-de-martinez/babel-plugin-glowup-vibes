@@ -216,3 +216,12 @@ test("Should replace slay with continue", () => {
   }).code;
   expect(output).toEqual(expected);
 });
+test("Should replace Promise with Bet", () => {
+  const input = `new Bet();`;
+  const expected = `"use strict";\n\nrequire("core-js/modules/es.promise.js");\nnew Promise();`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});

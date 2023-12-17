@@ -30,6 +30,14 @@ function vibeCheck() {
 
   fr(typeof sis === "function");
 
+  const newBet = new Bet((resolve, _reject) => {
+    setTimeout(() => {
+      resolve("foo");
+    }, 300);
+  });
+
+  newBet.then(lowkey.stan);
+
   if (!theVibe) {
     const severalSeats = new SeveralSeats(2);
     severalSeats.take(true);
