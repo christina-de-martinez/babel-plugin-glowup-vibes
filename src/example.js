@@ -32,6 +32,17 @@ function vibeCheck() {
 
   highkey("Highkey alerting!");
 
+  const newBet = new Bet((resolve, _reject) => {
+    setTimeout(() => {
+      resolve("foo");
+    }, 300);
+  });
+
+  newBet.then(lowkey.stan);
+  chill(() => {
+    lowkey.stan("Let's chill for a sec.");
+  }, 1000);
+
   if (!theVibe) {
     const severalSeats = new SeveralSeats(2);
     severalSeats.take(true);

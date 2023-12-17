@@ -227,9 +227,29 @@ test("Should replace highkey with alert", () => {
   expect(output).toEqual(expected);
 });
 
+test("Should replace Promise with Bet", () => {
+  const input = `new Bet();`;
+  const expected = `"use strict";\n\nrequire("core-js/modules/es.promise.js");\nnew Promise();`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
 test("Should not replace highkey in StringLiteral", () => {
   const input = `highkey("highkey")`;
   const expected = `"use strict";\n\nalert("highkey");`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test("Should replace chill with setTimeout", () => {
+  const input = `chill`;
+  const expected = `"use strict";\n\nsetTimeout;`;
   const output = babel.transform(input, {
     filename: "./../src/example.js",
     plugins: [glowupVibes],
