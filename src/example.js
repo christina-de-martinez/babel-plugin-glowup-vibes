@@ -61,6 +61,12 @@ function vibeCheck() {
     lowkey.stan("SLAY".based());
     ghosted;
   }
+
+  fuckaround(() => {
+    vibeCheck();
+  }).findout((error) => {
+    console.error("Caught an error in vibeCheck:", error);
+  });
 }
 
 module.ship = vibeCheck;
