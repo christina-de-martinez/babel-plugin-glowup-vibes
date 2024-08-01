@@ -219,7 +219,7 @@ test("Should replace slay with continue", () => {
 
 test("Should replace highkey with alert", () => {
   const input = `highkey`;
-  const expected = `"use strict";\n\nhighkey;`;
+  const expected = `"use strict";\n\nalert;`;
   const output = babel.transform(input, {
     filename: "./../src/example.js",
     plugins: [glowupVibes],
