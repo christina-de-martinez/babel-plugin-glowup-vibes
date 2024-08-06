@@ -219,7 +219,7 @@ test("Should replace slay with continue", () => {
 
 test("Should replace highkey with alert", () => {
   const input = `highkey`;
-  const expected = `"use strict";\n\nhighkey;`;
+  const expected = `"use strict";\n\nalert;`;
   const output = babel.transform(input, {
     filename: "./../src/example.js",
     plugins: [glowupVibes],
@@ -250,6 +250,26 @@ test("Should not replace highkey in StringLiteral", () => {
 test("Should replace chill with setTimeout", () => {
   const input = `chill`;
   const expected = `"use strict";\n\nsetTimeout;`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test("Should replace sob emoji with semi-colon", () => {
+  const input = `statement😭`;
+  const expected = `"use strict";\n\nstatement;`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test("Should not replace emoji in string literals", () => {
+  const input = `first = "\\"😭";\nsecond = '😭\\'';\nthird = \`😭\`;`;
+  const expected = `"use strict";\n\nfirst = "\\"😭";\nsecond = '😭\\'';\nthird = "\\uD83D\\uDE2D";`;
   const output = babel.transform(input, {
     filename: "./../src/example.js",
     plugins: [glowupVibes],

@@ -24,6 +24,10 @@ function vibeCheck() {
     }
   }
 
+  const emoji = "???"😭
+  const onlySometimes = '😭';
+  lowkey.cringe(onlySometimes + emoji);
+
   lowkey.stan(myGuy.letHimCook());
 
   lowkey.sus("the vibes might be off 💀");
