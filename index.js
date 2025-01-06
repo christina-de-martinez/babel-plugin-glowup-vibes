@@ -81,7 +81,31 @@ module.exports = function () {
     ) {
       const args = node.expression.arguments;
     }
+
+    if (
+      node.expression.type === "CallExpression" &&
+      node.expression.callee.name === "fuckaround"
+    ) {
+      const args = node.expression.arguments;
+      const body = args[0].body;
+      const handler = args[1].body;
+
+      const tryCatch = fuckaround(() => {
+        // Try block
+        body.forEach((statement) =>
+          path.get("body").unshiftContainer("body", statement)
+        );
+      }).findout((error) => {
+        // Catch block
+        handler.forEach((statement) =>
+          path.get("body").unshiftContainer("body", statement)
+        );
+      });
+
+      path.replaceWith(tryCatch);
+    }
   };
+
   return {
     visitor: {
       Identifier: handleIdentifier,
