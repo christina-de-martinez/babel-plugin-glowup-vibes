@@ -128,6 +128,16 @@ test("Should replace PERIODT with break", () => {
   expect(output).toEqual(expected);
 });
 
+test("Should replace PERIODTTT with break", () => {
+  const input = `for (let i = 0; i < 10; i++) PERIODTTT;`;
+  const expected = `"use strict";\n\nfor (let i = 0; i < 10; i++) break;`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
 test("Should replace skrt with break", () => {
   const input = `for (let i = 0; i < 10; i++) skrt;`;
   const expected = `"use strict";\n\nfor (let i = 0; i < 10; i++) break;`;
@@ -270,6 +280,16 @@ test("Should replace sob emoji with semi-colon", () => {
 test("Should not replace emoji in string literals", () => {
   const input = `first = "\\"😭";\nsecond = '😭\\'';\nthird = \`😭\`;`;
   const expected = `"use strict";\n\nfirst = "\\"😭";\nsecond = '😭\\'';\nthird = "\\uD83D\\uDE2D";`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test("Should replace spit with return", () => {
+  const input = `spit;`;
+  const expected = `"use strict";\n\nreturn;`;
   const output = babel.transform(input, {
     filename: "./../src/example.js",
     plugins: [glowupVibes],
