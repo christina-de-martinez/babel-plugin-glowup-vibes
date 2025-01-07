@@ -76,8 +76,10 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | ghosted                                         | return null                                          |
 | drop(thingToReturn)                             | return thingToReturn;                                |
 | itsGiving(thingToReturn)                        | return thingToReturn;                                |
-| PERIODT                                         | break                                                |
+| spit(thingToReturn)                             | return thingToReturn;                                |
 | period                                          | break                                                |
+| PERIODT                                         | break                                                |
+| PERIODTTT                                       | break                                                |
 | skrt                                            | break                                                |
 | holdUp(veryCoolFunction)                        | async function veryCoolFunction()                    |
 | letItCook(thingToAwait)                         | await thingToAwait                                   |

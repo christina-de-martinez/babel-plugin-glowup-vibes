@@ -65,6 +65,8 @@ function vibeCheck() {
     lowkey.stan("SLAY".based());
     ghosted;
   }
+
+  spit("🔥");
 }
 
 module.ship = vibeCheck;
