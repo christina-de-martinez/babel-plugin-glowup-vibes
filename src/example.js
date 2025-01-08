@@ -47,6 +47,11 @@ function vibeCheck() {
     lowkey.stan("Let's chill for a sec.");
   }, 1000);
 
+  const auraPoints = [0, 5, 20];
+  auraPoints.mew((prev, curr) => {
+    return prev + curr;
+  }, 0)
+
   if (!theVibe) {
     const severalSeats = new SeveralSeats(2);
     severalSeats.take(true);

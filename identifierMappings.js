@@ -32,4 +32,6 @@ module.exports = {
   highkey: "alert",
   Bet: "Promise",
   chill: "setTimeout",
+  lockIn: "import",
+  mew: "reduce"
 };
