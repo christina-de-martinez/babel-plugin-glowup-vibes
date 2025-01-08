@@ -296,3 +296,42 @@ test("Should replace spit with return", () => {
   }).code;
   expect(output).toEqual(expected);
 });
+
+test("Should replace mew with map", () => {
+  const input = `
+    const arr = [1, 2, 3];
+    arr.mew((el) => el + 1);
+    `;
+  const expected = `"use strict";\n\nconst arr = [1, 2, 3];\narr.map(el => el + 1);`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test("Should replace skibidi with filter", () => {
+  const input = `
+    const arr = [1, 2, 3];
+    arr.skibidi((el) => el + 1);
+    `;
+  const expected = `"use strict";\n\nconst arr = [1, 2, 3];\narr.filter(el => el + 1);`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test("Should replace justPutTheFriesInTheBagBro with reduce", () => {
+  const input = `
+    const arr = [1, 2, 3];
+    arr.justPutTheFriesInTheBagBro((el) => el + 1);
+    `;
+  const expected = `"use strict";\n\nconst arr = [1, 2, 3];\narr.reduce(el => el + 1);`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});

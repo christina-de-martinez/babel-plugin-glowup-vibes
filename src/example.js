@@ -7,6 +7,11 @@ function vibeCheck() {
   const rizz = finna("u simpin'?") ? cap : onGod;
   const depression = noCap;
 
+  const auraPoints = [0, 2, 4, 6, 8, 10];
+  const aura = auraPoints.mew((point) => point * 2);
+  const totalAura = aura.skibidi((point) => point);
+  const filteredAura = aura.justPutTheFriesInTheBagBro((point) => point > 5);
+
   const myGuy = {
     heat: "Yuh I'm droppin dis heat ❗❗",
 
