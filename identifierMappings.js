@@ -32,4 +32,7 @@ module.exports = {
   highkey: "alert",
   Bet: "Promise",
   chill: "setTimeout",
+  mew: "map",
+  skibidi: "filter",
+  justPutTheFriesInTheBagBro: "reduce",
 };
