@@ -122,6 +122,8 @@ AST explorer is also a great tool to learn about ASTs and test some of your idea
 
 There is a C++ version! <https://twitter.com/lauriewired/status/1684329735399313409>
 
+PyGyat is a similar preprocessor for Python <https://www.pygyat.org/>
+
 @renancaraujo created a Dart version: <https://pub.dev/packages/glowup_vibes>
 
 @chelseas created a Julia version: <https://github.com/chelseas/GlowupVibes.jl>
