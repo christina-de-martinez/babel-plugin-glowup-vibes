@@ -35,4 +35,6 @@ module.exports = {
   mew: "map",
   skibidi: "filter",
   justPutTheFriesInTheBagBro: "reduce",
+  toilet: "return",
+  ohio: "null",
 };
