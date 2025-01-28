@@ -335,3 +335,27 @@ test("Should replace justPutTheFriesInTheBagBro with reduce", () => {
   }).code;
   expect(output).toEqual(expected);
 });
+
+test("Should replace toilet with return", () => {
+  const input = `
+    toilet(1);
+    `;
+  const expected = `"use strict";\n\nreturn 1;`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test("Should replace ohio with reduce", () => {
+  const input = `
+    const arr = ohio
+    `;
+  const expected = `"use strict";\n\nconst arr = null;`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});

@@ -12,6 +12,10 @@ function vibeCheck() {
   const totalAura = aura.skibidi((point) => point);
   const filteredAura = aura.justPutTheFriesInTheBagBro((point) => point > 5);
 
+  auraPoints.skibidi(() => {
+    toilet(ohio)
+  });
+
   const myGuy = {
     heat: "Yuh I'm droppin dis heat ❗❗",
 

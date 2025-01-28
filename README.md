@@ -99,6 +99,8 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | arr.mew(args)                                   | arr.map(args)                                        |
 | arr.skibidi(args)                               | arr.filter(args)                                     |
 | arr.justPutTheFriesInTheBagBro(args)            | arr.reduce(args)                                     |
+| toilet(thingToReturn)                           | return thingToReturn;                                |
+| ohio                                            | null                                                 |
 
 ## Contributing
 
