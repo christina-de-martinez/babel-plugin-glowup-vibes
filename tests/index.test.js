@@ -382,3 +382,18 @@ test("Should replace yappingStarts and yappingEnds with /* and */", () => {
   expect(multiLinerOutput).toEqual(multiLinerExpected);
 });
 
+test("Should replace yap with * if in comment (supports yapdoc)", () => {
+  const input = `
+    yappingStarts yap
+      yap this is a comment
+      yap as is this
+    yappingEnds
+  `;
+  const expected = `\n/**\n * this is a comment\n * as is this\n */\n"use strict";`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
