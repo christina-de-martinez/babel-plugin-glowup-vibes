@@ -1,20 +1,38 @@
 const parser = require("@babel/parser");
 
 module.exports = function (code, opts) {
-  const literalIndictors = ['"', '\'', '`'];
+  const literalIndictors = ['"', "'", "`"];
   let currentIndicator;
-  let insideLiteral = false
+  let insideLiteral = false;
   let parsed = "";
-  for (let i=0, ch; ch = code[i]; i++) {
+  for (let i = 0, ch; (ch = code[i]); i++) {
     if (insideLiteral) {
-      insideLiteral = !(ch == currentIndicator && code[i-1] != '\\')
+      insideLiteral = !(ch == currentIndicator && code[i - 1] != "\\");
+      parsed += ch;
     } else {
       if (literalIndictors.includes(ch)) {
         currentIndicator = ch;
-        insideLiteral = true
+        insideLiteral = true;
+      }
+
+      if (ch == "\uD83D" && code[++i] == "\uDE2D") {
+        parsed += ";";
+      } else if (ch !== "y") {
+        parsed += ch;
+      } else {
+        const word = code.slice(i).match(/^\w+/)?.[0];
+        if (word === "yappingStarts") {
+          parsed += "/*";
+          i += word.length - 1;
+        } else if (word === "yappingEnds") {
+          parsed += "*/";
+          i += word.length - 1;
+        } else {
+          parsed += ch;
+        }
       }
     }
-    parsed += (!insideLiteral && ch == "\uD83D" && code[++i] == "\uDE2D") ? ";" : ch;
   }
-  return parser.parse(parsed, opts)
-}
+  return parser.parse(parsed, opts);
+};
+

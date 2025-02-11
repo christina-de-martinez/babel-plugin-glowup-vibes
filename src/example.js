@@ -75,6 +75,9 @@ function vibeCheck() {
     ghosted;
   }
 
+  yappingStarts
+    hawk tuah!
+  yappingEnds
   spit("🔥");
 }
 

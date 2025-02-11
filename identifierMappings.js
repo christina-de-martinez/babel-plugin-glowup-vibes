@@ -37,4 +37,6 @@ module.exports = {
   justPutTheFriesInTheBagBro: "reduce",
   toilet: "return",
   ohio: "null",
+  yappingStarts: "/*",
+  yappingEnds: "*/",
 };
