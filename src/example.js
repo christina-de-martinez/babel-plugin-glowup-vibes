@@ -36,6 +36,7 @@ function vibeCheck() {
     }
   }
 
+  yappingStarts More emojis needed tbh yappingEnds
   const emoji = "???"😭
   const onlySometimes = '😭';
   lowkey.cringe(onlySometimes + emoji);
