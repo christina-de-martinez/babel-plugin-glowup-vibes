@@ -16,6 +16,7 @@ module.exports = function (code, opts) {
         insideLiteral = true;
       }
 
+      // Sob emoji for semicolon
       if (ch == "\uD83D" && code[++i] == "\uDE2D") {
         parsed += ";";
       } else if (ch !== "y") {
