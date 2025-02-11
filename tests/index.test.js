@@ -359,3 +359,26 @@ test("Should replace ohio with reduce", () => {
   }).code;
   expect(output).toEqual(expected);
 });
+
+test("Should replace yappingStarts and yappingEnds with /* and */", () => {
+  const oneLinerInput = `yappingStarts this is a comment yappingEnds`;
+  const oneLinerExpected = `/* this is a comment */\n"use strict";`;
+  const oneLinerOutput = babel.transform(oneLinerInput, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(oneLinerOutput).toEqual(oneLinerExpected);
+
+  const multiLinerInput = `
+    yappingStarts
+      this is a comment
+    yappingEnds
+  `;
+  const multiLinerExpected = `\n/*\n  this is a comment\n*/\n"use strict";`;
+  const multiLinerOutput = babel.transform(multiLinerInput, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(multiLinerOutput).toEqual(multiLinerExpected);
+});
+

@@ -47,7 +47,8 @@
   "jest": {
     "transformIgnorePatterns": [
       "/node_modules/",
-      "./identifierMappings.js"
+      "./identifierMappings.js",
+      "./preParser.js"
     ]
   }
 }
