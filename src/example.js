@@ -2,6 +2,9 @@ holdUp(function sis() {
   letItCook(vibeCheck);
 });
 
+yappingStarts yap
+  yap @returns {(true | null)}
+yappingEnds
 function vibeCheck() {
   const theVibe = cap;
   const rizz = finna("u simpin'?") ? cap : onGod;

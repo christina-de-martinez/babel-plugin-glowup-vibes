@@ -4,6 +4,7 @@ module.exports = function (code, opts) {
   const literalIndictors = ['"', "'", "`"];
   let currentIndicator;
   let insideLiteral = false;
+  let insideJSDoc = false;
   let parsed = "";
   for (let i = 0, ch; (ch = code[i]); i++) {
     if (insideLiteral) {
@@ -25,7 +26,15 @@ module.exports = function (code, opts) {
           parsed += "/*";
           i += word.length - 1;
         } else if (word === "yappingEnds") {
-          parsed += "*/";
+          parsed += insideJSDoc ? " */" : "*/";
+          insideJSDoc = false;
+          i += word.length - 1;
+        } else if (word === "yap") {
+          if (code.slice(i - 14, i) === "yappingStarts ") {
+            insideJSDoc = true;
+          }
+          parsed = insideJSDoc ? parsed.slice(0, -1) : parsed;
+          parsed += "*";
           i += word.length - 1;
         } else {
           parsed += ch;
