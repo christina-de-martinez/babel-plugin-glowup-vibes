@@ -37,9 +37,7 @@ module.exports = function () {
 
     if (
       node.expression.type === "CallExpression" &&
-      (node.expression.callee.name === "itsGiving" ||
-        node.expression.callee.name === "drop" ||
-        node.expression.callee.name === "toilet")
+      ["itsGiving", "drop", "toilet"].includes(node.expression.callee.name)
     ) {
       const errorArgument = node.expression.arguments[0];
       const returnStatement = {
