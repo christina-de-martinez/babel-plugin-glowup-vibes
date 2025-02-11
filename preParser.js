@@ -22,22 +22,28 @@ module.exports = function (code, opts) {
         parsed += ch;
       } else {
         const word = code.slice(i).match(/^\w+/)?.[0];
-        if (word === "yappingStarts") {
-          parsed += "/*";
-          i += word.length - 1;
-        } else if (word === "yappingEnds") {
-          parsed += insideJSDoc ? " */" : "*/";
-          insideJSDoc = false;
-          i += word.length - 1;
-        } else if (word === "yap") {
-          if (code.slice(i - 14, i) === "yappingStarts ") {
-            insideJSDoc = true;
-          }
-          parsed = insideJSDoc ? parsed.slice(0, -1) : parsed;
-          parsed += "*";
-          i += word.length - 1;
-        } else {
-          parsed += ch;
+
+        switch (word) {
+          case "yappingStarts":
+            parsed += "/*";
+            i += word.length - 1;
+            break;
+          case "yappingEnds":
+            parsed += insideJSDoc ? " */" : "*/";
+            insideJSDoc = false;
+            i += word.length - 1;
+            break;
+          case "yap":
+            if (code.slice(i - 14, i) === "yappingStarts ") {
+              insideJSDoc = true;
+            }
+            parsed = insideJSDoc ? parsed.slice(0, -1) : parsed;
+            parsed += "*";
+            i += word.length - 1;
+            break;
+          default:
+            parsed += ch;
+            break;
         }
       }
     }
