@@ -38,14 +38,15 @@ module.exports = function () {
     if (
       node.expression.type === "CallExpression" &&
       (node.expression.callee.name === "itsGiving" ||
-        node.expression.callee.name === "drop")
+        node.expression.callee.name === "drop" ||
+        node.expression.callee.name === "toilet")
     ) {
       const errorArgument = node.expression.arguments[0];
-      const throwStatement = {
+      const returnStatement = {
         type: "ReturnStatement",
         argument: errorArgument,
       };
-      path.replaceWith(throwStatement);
+      path.replaceWith(returnStatement);
     }
 
     if (
