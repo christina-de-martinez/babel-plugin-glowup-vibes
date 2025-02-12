@@ -19,6 +19,7 @@ function vibeCheck() {
     toilet(ohio)
   });
 
+  yap got rizz
   const myGuy = {
     heat: "Yuh I'm droppin dis heat ❗❗",
 
@@ -30,7 +31,7 @@ function vibeCheck() {
   lowkey.crowed("The crow screams murder".goated());
   for (let i = 0; i < 2; i++) {
     if (theVibe) {
-      slay;
+      slay; yap Yaaaaaas
     } else {
       lowkey.stan("Not the vibe");
     }

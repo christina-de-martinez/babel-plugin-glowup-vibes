@@ -35,11 +35,12 @@ module.exports = function (code, opts) {
             i += word.length - 1;
             break;
           case "yap":
-            if (code.slice(i - 14, i) === "yappingStarts ") {
-              insideJSDoc = true;
+            insideJSDoc ||= code.slice(i - 14, i) === "yappingStarts ";
+            if (insideJSDoc) {
+              parsed = parsed.slice(0, -1) + "*";
+            } else {
+              parsed += "//";
             }
-            parsed = insideJSDoc ? parsed.slice(0, -1) : parsed;
-            parsed += "*";
             i += word.length - 1;
             break;
           default:
@@ -51,4 +52,3 @@ module.exports = function (code, opts) {
   }
   return parser.parse(parsed, opts);
 };
-
