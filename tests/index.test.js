@@ -359,3 +359,58 @@ test("Should replace ohio with reduce", () => {
   }).code;
   expect(output).toEqual(expected);
 });
+
+test("Converts fuckAround/findOut functions to try/catch blocks", () => {
+  const input = `
+    fuckAround(() => {
+      console.log("try");
+    }).findOut((err) => {
+      console.error("catch");
+    });
+  `;
+  const expected = `"use strict";\n\ntry {\n  console.log("try");\n} catch (err) {\n  console.error("catch");\n}`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+
+test("Treats eitherWay as finally block if chained to fuckAround/findOut", () => {
+  const input = `
+    fuckAround(() => {
+      console.log("try");
+    }).findOut((err) => {
+      console.error("catch");
+    }).eitherWay(() => {
+      console.info("finally");
+    });
+  `;
+  const expected = `"use strict";\n\ntry {\n  console.log("try");\n} catch (err) {\n  console.error("catch");\n} finally {\n  console.info("finally");\n}`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test("Does not treat fuckAround/findOut/eitherWay as try/catch/finally if not chained", () => {
+  const input = `
+    fuckAround(() => {
+      console.log("try");
+    });
+    findOut((err) => {
+      console.error("catch");
+    });
+    eitherWay(() => {
+      console.info("finally");
+    });
+  `;
+  const expected = `"use strict";\n\nfuckAround(() => {\n  console.log("try");\n});\nfindOut(err => {\n  console.error("catch");\n});\neitherWay(() => {\n  console.info("finally");\n});`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+})
