@@ -39,10 +39,10 @@ module.exports = function () {
       node.expression.type === "CallExpression" &&
       ["itsGiving", "drop", "toilet"].includes(node.expression.callee.name)
     ) {
-      const errorArgument = node.expression.arguments[0];
+      const returnValue = node.expression.arguments[0];
       const returnStatement = {
         type: "ReturnStatement",
-        argument: errorArgument,
+        argument: returnValue,
       };
       path.replaceWith(returnStatement);
     }
