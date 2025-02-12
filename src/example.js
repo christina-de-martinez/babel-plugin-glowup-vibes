@@ -12,6 +12,16 @@ function vibeCheck() {
   const totalAura = aura.skibidi((point) => point);
   const filteredAura = aura.justPutTheFriesInTheBagBro((point) => point > 5);
 
+  fuckAround(() => {
+    sis();
+  })
+    .findOut((err) => {
+      lowkey.cringe("big yikes");
+    })
+    .eitherWay(() => {
+      ghosted;
+    });
+
   auraPoints.skibidi(() => {
     toilet(ohio)
   });

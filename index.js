@@ -77,6 +77,42 @@ module.exports = function () {
 
     if (
       node.expression.type === "CallExpression" &&
+      (node.expression.callee.property?.name === "findOut" ||
+        node.expression.callee.property?.name === "eitherWay")
+    ) {
+      function getBlocks(token) {
+        const argument = token.arguments[0];
+        const callee = token.callee;
+
+        if (callee.name === "fuckAround") {
+          return { try: { body: argument.body } };
+        }
+
+        return {
+          ...getBlocks(callee.object),
+          [callee.property.name === "findOut" ? "catch" : "finally"]: {
+            body: argument.body,
+            param: argument.params?.[0],
+          },
+        };
+      }
+      const blocks = getBlocks(node.expression);
+
+      const tryCatch = {
+        type: "TryStatement",
+        block: blocks.try.body,
+        handler: {
+          type: "CatchClause",
+          param: blocks.catch.param,
+          body: blocks.catch.body,
+        },
+        finalizer: blocks.finally?.body,
+      };
+      path.replaceWith(tryCatch);
+    }
+
+    if (
+      node.expression.type === "CallExpression" &&
       node.expression.callee.name === "vibeOnEvent"
     ) {
       const args = node.expression.arguments;
