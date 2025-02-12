@@ -101,6 +101,7 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | arr.justPutTheFriesInTheBagBro(args)            | arr.reduce(args)                                     |
 | toilet(thingToReturn)                           | return thingToReturn;                                |
 | ohio                                            | null                                                 |
+| fuckAround(()=>{}).findOut((L)=>{}).eitherWay(()=>{}) | try {} catch (L) {} finally {}                 |
 
 ## Contributing
 
