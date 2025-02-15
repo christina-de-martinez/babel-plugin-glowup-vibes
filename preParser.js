@@ -1,5 +1,11 @@
 const parser = require("@babel/parser");
 
+const yap = {
+  start: "yappingStarts",
+  end: "yappingEnds",
+  single: "yap",
+};
+
 module.exports = function (code, opts) {
   const literalIndictors = ['"', "'", "`"];
   let currentIndicator;
@@ -25,28 +31,27 @@ module.exports = function (code, opts) {
         const word = code.slice(i).match(/^\w+/)?.[0];
 
         switch (word) {
-          case "yappingStarts":
+          case yap.start:
             parsed += "/*";
-            i += word.length - 1;
             break;
-          case "yappingEnds":
+          case yap.end:
             parsed += insideJSDoc ? " */" : "*/";
             insideJSDoc = false;
-            i += word.length - 1;
             break;
-          case "yap":
-            insideJSDoc ||= code.slice(i - 14, i) === "yappingStarts ";
+          case yap.single:
+            insideJSDoc ||= code.slice(i - 14, i) === yap.start + " ";
             if (insideJSDoc) {
               parsed = parsed.slice(0, -1) + "*";
             } else {
               parsed += "//";
             }
-            i += word.length - 1;
             break;
           default:
             parsed += ch;
             break;
         }
+
+        i += Object.values(yap).includes(word) ? word.length - 1 : 0;
       }
     }
   }
