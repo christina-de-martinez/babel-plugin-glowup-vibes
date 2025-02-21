@@ -2,6 +2,9 @@ holdUp(function sis() {
   letItCook(vibeCheck);
 });
 
+yappingStarts yap
+  yap @returns {(true | null)}
+yappingEnds
 function vibeCheck() {
   const theVibe = cap;
   const rizz = finna("u simpin'?") ? cap : onGod;
@@ -16,6 +19,7 @@ function vibeCheck() {
     toilet(ohio)
   });
 
+  yap got rizz
   const myGuy = {
     heat: "Yuh I'm droppin dis heat ❗❗",
 
@@ -27,12 +31,13 @@ function vibeCheck() {
   lowkey.crowed("The crow screams murder".goated());
   for (let i = 0; i < 2; i++) {
     if (theVibe) {
-      slay;
+      slay; yap Yaaaaaas
     } else {
       lowkey.stan("Not the vibe");
     }
   }
 
+  yappingStarts More emojis needed tbh yappingEnds
   const emoji = "???"😭
   const onlySometimes = '😭';
   lowkey.cringe(onlySometimes + emoji);
@@ -75,6 +80,9 @@ function vibeCheck() {
     ghosted;
   }
 
+  yappingStarts
+    hawk tuah!
+  yappingEnds
   spit("🔥");
 }
 

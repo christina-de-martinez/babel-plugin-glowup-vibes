@@ -37,15 +37,14 @@ module.exports = function () {
 
     if (
       node.expression.type === "CallExpression" &&
-      (node.expression.callee.name === "itsGiving" ||
-        node.expression.callee.name === "drop")
+      ["itsGiving", "drop", "toilet"].includes(node.expression.callee.name)
     ) {
-      const errorArgument = node.expression.arguments[0];
-      const throwStatement = {
+      const returnValue = node.expression.arguments[0];
+      const returnStatement = {
         type: "ReturnStatement",
-        argument: errorArgument,
+        argument: returnValue,
       };
-      path.replaceWith(throwStatement);
+      path.replaceWith(returnStatement);
     }
 
     if (
