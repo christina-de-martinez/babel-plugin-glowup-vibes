@@ -61,46 +61,49 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 
 ## Options
 
-| Your Code                                       | JS                                                   |
-|-------------------------------------------------|------------------------------------------------------|
-| noCap                                           | true                                                 |
-| cap                                             | false                                                |
-| onGod                                           | true                                                 |
-| lowkey.stan("message")                          | console.log("message")                               |
-| lowkey.sus("message")                           | console.warn("message")                              |
-| lowkey.crowed("message")                        | console.debug("message")                             |
-| lowkey.cringe("message")                        | console.error("message")                             |
-| lowkey.tea("message")                           | console.info("message")                              |
-| throw new L("message")                          | throw new Error("message")                           |
-| yeet(new L("message"))                          | throw new Error("message")                           |
-| ghosted                                         | return null                                          |
-| drop(thingToReturn)                             | return thingToReturn;                                |
-| itsGiving(thingToReturn)                        | return thingToReturn;                                |
-| spit(thingToReturn)                             | return thingToReturn;                                |
-| period                                          | break                                                |
-| PERIODT                                         | break                                                |
-| PERIODTTT                                       | break                                                |
-| skrt                                            | break                                                |
-| holdUp(veryCoolFunction)                        | async function veryCoolFunction()                    |
-| letItCook(thingToAwait)                         | await thingToAwait                                   |
-| grab("stash")                                   | require("stash")                                     |
-| module.ship = vibe                              | module.exports = vibe                                |
-| fr(assertion)                                   | assert(assertion)                                    |
-| outOfPocket                                     | Infinity                                             |
-| "BLAT".based()                                  | "BLAT".toLowerCase()                                 |
-| "blat".goated()                                 | "blat".toUpperCase()                                 |
-| dis                                             | this                                                 |
-| clapback(1)                                     | yield 1                                              |
-| finna("message")                                | confirm("message")                                   |
-| document.vibeOnEvent(event, function, options); | document.addEventListener(event, function, options); |
-| highkey("message")                              | alert("message")                                                    |
-| Bet                                             | Promise                                              |
-| chill(args)                                     | setTimeout(args)                                     |
-| arr.mew(args)                                   | arr.map(args)                                        |
-| arr.skibidi(args)                               | arr.filter(args)                                     |
-| arr.justPutTheFriesInTheBagBro(args)            | arr.reduce(args)                                     |
-| toilet(thingToReturn)                           | return thingToReturn;                                |
-| ohio                                            | null                                                 |
+| Your Code                                                              | JS                                                   |
+|------------------------------------------------------------------------|------------------------------------------------------|
+| noCap                                                                  | true                                                 |
+| cap                                                                    | false                                                |
+| onGod                                                                  | true                                                 |
+| lowkey.stan("message")                                                 | console.log("message")                               |
+| lowkey.sus("message")                                                  | console.warn("message")                              |
+| lowkey.crowed("message")                                               | console.debug("message")                             |
+| lowkey.cringe("message")                                               | console.error("message")                             |
+| lowkey.tea("message")                                                  | console.info("message")                              |
+| throw new L("message")                                                 | throw new Error("message")                           |
+| yeet(new L("message"))                                                 | throw new Error("message")                           |
+| ghosted                                                                | return null                                          |
+| drop(thingToReturn)                                                    | return thingToReturn;                                |
+| itsGiving(thingToReturn)                                               | return thingToReturn;                                |
+| spit(thingToReturn)                                                    | return thingToReturn;                                |
+| period                                                                 | break                                                |
+| PERIODT                                                                | break                                                |
+| PERIODTTT                                                              | break                                                |
+| skrt                                                                   | break                                                |
+| holdUp(veryCoolFunction)                                               | async function veryCoolFunction()                    |
+| letItCook(thingToAwait)                                                | await thingToAwait                                   |
+| grab("stash")                                                          | require("stash")                                     |
+| module.ship = vibe                                                     | module.exports = vibe                                |
+| fr(assertion)                                                          | assert(assertion)                                    |
+| outOfPocket                                                            | Infinity                                             |
+| "BLAT".based()                                                         | "BLAT".toLowerCase()                                 |
+| "blat".goated()                                                        | "blat".toUpperCase()                                 |
+| dis                                                                    | this                                                 |
+| clapback(1)                                                            | yield 1                                              |
+| finna("message")                                                       | confirm("message")                                   |
+| document.vibeOnEvent(event, function, options);                        | document.addEventListener(event, function, options); |
+| highkey("message")                                                     | alert("message")                                     |
+| Bet                                                                    | Promise                                              |
+| chill(args)                                                            | setTimeout(args)                                     |
+| arr.mew(args)                                                          | arr.map(args)                                        |
+| arr.skibidi(args)                                                      | arr.filter(args)                                     |
+| arr.justPutTheFriesInTheBagBro(args)                                   | arr.reduce(args)                                     |
+| toilet(thingToReturn)                                                  | return thingToReturn;                                |
+| ohio                                                                   | null                                                 |
+| yap single line comment                                                | // single line comment                               |
+| yappingStarts block comment yappingEnds                                | /* block comment */                                  |
+| <pre>yappingStarts yap<br>  yap @returns {string}<br>yappingEnds</pre> | <pre>/**<br> * @returns {string}<br> */</pre>        |
 
 ## Contributing
 
