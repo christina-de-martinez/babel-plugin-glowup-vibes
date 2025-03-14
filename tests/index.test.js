@@ -410,9 +410,9 @@ test("Should replace yap with // if not already in comment", () => {
   expect(output).toEqual(expected);
 });
 
-test("Converts fuckAround/findOut functions to try/catch blocks", () => {
+test("Converts fAround/findOut functions to try/catch blocks", () => {
   const input = `
-    fuckAround(() => {
+    fAround(() => {
       console.log("try");
     }).findOut((err) => {
       console.error("catch");
@@ -426,9 +426,9 @@ test("Converts fuckAround/findOut functions to try/catch blocks", () => {
   expect(output).toEqual(expected);
 });
 
-test("Treats eitherWay as finally block if chained to fuckAround/findOut", () => {
+test("Treats eitherWay as finally block if chained to fAround/findOut", () => {
   const input = `
-    fuckAround(() => {
+    fAround(() => {
       console.log("try");
     }).findOut((err) => {
       console.error("catch");
@@ -444,9 +444,9 @@ test("Treats eitherWay as finally block if chained to fuckAround/findOut", () =>
   expect(output).toEqual(expected);
 });
 
-test("Does not treat fuckAround/findOut/eitherWay as try/catch/finally if not chained", () => {
+test("Does not treat fAround/findOut/eitherWay as try/catch/finally if not chained", () => {
   const input = `
-    fuckAround(() => {
+    fAround(() => {
       console.log("try");
     });
     findOut((err) => {
@@ -456,7 +456,7 @@ test("Does not treat fuckAround/findOut/eitherWay as try/catch/finally if not ch
       console.info("finally");
     });
   `;
-  const expected = `"use strict";\n\nfuckAround(() => {\n  console.log("try");\n});\nfindOut(err => {\n  console.error("catch");\n});\neitherWay(() => {\n  console.info("finally");\n});`;
+  const expected = `"use strict";\n\nfAround(() => {\n  console.log("try");\n});\nfindOut(err => {\n  console.error("catch");\n});\neitherWay(() => {\n  console.info("finally");\n});`;
   const output = babel.transform(input, {
     filename: "./../src/example.js",
     plugins: [glowupVibes],

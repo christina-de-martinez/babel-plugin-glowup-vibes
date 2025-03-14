@@ -15,7 +15,7 @@ function vibeCheck() {
   const totalAura = aura.skibidi((point) => point);
   const filteredAura = aura.justPutTheFriesInTheBagBro((point) => point > 5);
 
-  fuckAround(() => {
+  fAround(() => {
     sis();
   })
     .findOut((err) => {

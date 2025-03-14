@@ -83,7 +83,7 @@ module.exports = function () {
         const argument = token.arguments[0];
         const callee = token.callee;
 
-        if (callee.name === "fuckAround") {
+        if (callee.name === "fAround") {
           return { try: { body: argument.body } };
         }
 
