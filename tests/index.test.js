@@ -360,6 +360,56 @@ test("Should replace ohio with reduce", () => {
   expect(output).toEqual(expected);
 });
 
+test("Should replace yappingStarts and yappingEnds with /* and */", () => {
+  const oneLinerInput = `yappingStarts this is a comment yappingEnds`;
+  const oneLinerExpected = `/* this is a comment */\n"use strict";`;
+  const oneLinerOutput = babel.transform(oneLinerInput, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(oneLinerOutput).toEqual(oneLinerExpected);
+
+  const multiLinerInput = `
+    yappingStarts
+      this is a comment
+    yappingEnds
+  `;
+  const multiLinerExpected = `\n/*\n  this is a comment\n*/\n"use strict";`;
+  const multiLinerOutput = babel.transform(multiLinerInput, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(multiLinerOutput).toEqual(multiLinerExpected);
+});
+
+test("Should replace yap with * if in block comment (supports yapdoc)", () => {
+  const input = `
+    yappingStarts yap
+      yap this is a comment
+      yap as is this
+    yappingEnds
+  `;
+  const expected = `\n/**\n * this is a comment\n * as is this\n */\n"use strict";`;
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
+test("Should replace yap with // if not already in comment", () => {
+  const input = `
+    yap Single line comment
+    console.log("hello"); yap "hello"
+  `;
+  const expected = '"use strict";\n\n// Single line comment\nconsole.log("hello"); // "hello"';
+  const output = babel.transform(input, {
+    filename: "./../src/example.js",
+    plugins: [glowupVibes],
+  }).code;
+  expect(output).toEqual(expected);
+});
+
 test("Converts fuckAround/findOut functions to try/catch blocks", () => {
   const input = `
     fuckAround(() => {
@@ -375,7 +425,6 @@ test("Converts fuckAround/findOut functions to try/catch blocks", () => {
   }).code;
   expect(output).toEqual(expected);
 });
-
 
 test("Treats eitherWay as finally block if chained to fuckAround/findOut", () => {
   const input = `
@@ -413,4 +462,4 @@ test("Does not treat fuckAround/findOut/eitherWay as try/catch/finally if not ch
     plugins: [glowupVibes],
   }).code;
   expect(output).toEqual(expected);
-})
+});
