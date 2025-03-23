@@ -101,6 +101,7 @@ Note: this was designed using Babel 7 and I haven't tested it on anything else. 
 | arr.justPutTheFriesInTheBagBro(args)                                   | arr.reduce(args)                                     |
 | toilet(thingToReturn)                                                  | return thingToReturn;                                |
 | ohio                                                                   | null                                                 |
+| fAround(()=>{}).findOut((L)=>{}).eitherWay(()=>{})                     | try {} catch (L) {} finally {}                       |
 | yap single line comment                                                | // single line comment                               |
 | yappingStarts block comment yappingEnds                                | /* block comment */                                  |
 | <pre>yappingStarts yap<br>  yap @returns {string}<br>yappingEnds</pre> | <pre>/**<br> * @returns {string}<br> */</pre>        |

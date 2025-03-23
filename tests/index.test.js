@@ -301,3 +301,48 @@ test("Should replace yap with // if not already in comment", () => {
   const output = babel.transform(input, OPTS).code;
   expect(output).toEqual(expected);
 });
+
+test("Converts fAround/findOut functions to try/catch blocks", () => {
+  const input = `
+    fAround(() => {
+      console.log("try");
+    }).findOut((err) => {
+      console.error("catch");
+    });
+  `;
+  const expected = `"use strict";\n\ntry {\n  console.log("try");\n} catch (err) {\n  console.error("catch");\n}`;
+  const output = babel.transform(input, OPTS).code;
+  expect(output).toEqual(expected);
+});
+
+test("Treats eitherWay as finally block if chained to fAround/findOut", () => {
+  const input = `
+    fAround(() => {
+      console.log("try");
+    }).findOut((err) => {
+      console.error("catch");
+    }).eitherWay(() => {
+      console.info("finally");
+    });
+  `;
+  const expected = `"use strict";\n\ntry {\n  console.log("try");\n} catch (err) {\n  console.error("catch");\n} finally {\n  console.info("finally");\n}`;
+  const output = babel.transform(input, OPTS).code;
+  expect(output).toEqual(expected);
+});
+
+test("Does not treat fAround/findOut/eitherWay as try/catch/finally if not chained", () => {
+  const input = `
+    fAround(() => {
+      console.log("try");
+    });
+    findOut((err) => {
+      console.error("catch");
+    });
+    eitherWay(() => {
+      console.info("finally");
+    });
+  `;
+  const expected = `"use strict";\n\nfAround(() => {\n  console.log("try");\n});\nfindOut(err => {\n  console.error("catch");\n});\neitherWay(() => {\n  console.info("finally");\n});`;
+  const output = babel.transform(input, OPTS).code;
+  expect(output).toEqual(expected);
+});
